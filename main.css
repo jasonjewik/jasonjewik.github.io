@@ -3,21 +3,13 @@
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-}
-
-/*set the background image*/
-body {
-	background: url("background.jpg") no-repeat;
-	background-size: cover;
 }
 
 /*header*/
 .header-bg {
 	background-color: black;
 }
-
-header .row {
+header .row, footer .row {
 	display: flex;
 	align-items: center;
 	padding: 20px 0px;
@@ -32,52 +24,77 @@ header nav {
 	display: flex;
 	justify-content: flex-end;
 }
-header p {
+header p, footer p {
 	color: Gainsboro;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	padding: 0px 20px;
 	margin: 0px;
 }
-/*change color on hover*/
-header p:hover {
+/*change color and move on hover*/
+header p:hover, footer p:hover {
 	color: Ghostwhite;
-}
-/*move down like a button when clicked*/
-header p:active {
 	padding-top: 2px;
 }
 
-/*section*/
-/*set the image*/
-section img {
-	margin-top: -100px;
-	margin-bottom: -500px;
+/*footer background*/
+.footer-bg {
+	background-color: #41394f;
+	height: 200px;
 }
-/*move down like a button when clicked*/
-section img:active {
-	padding-top: 4px;
-}
-
-
-/*more info*/
-#info {
-	margin-top: 100px;
-	align-items: center;
-}
-section p {
-	border: solid 1px rgba(0, 0, 0, 0.3);
-	border-radius: 20px;
-	color: black;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 300;
+footer img {
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 0px 20px;
 	display: flex;
-	padding: 0px 40px;
 }
-section p:hover {
-	background-color: black;
+#mail {
+	margin-top: 2px;
+	width: 48px;
+}
+#github {
+	margin-top: 2px;
+}
+footer h5 {
+	font-family; "Ubuntu", sans-serif;
+	font-weight: 400;
 	color: white;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 4px;
 }
-section p:active {
-	padding-top: 2px;
+footer h5:hover {
+	color: black;
+	background: white;
+}
+footer h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+/*mid section*/
+#name {
+	height: 1000px;
+	background-color: #EFFBFB;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+}
+#name h1 {
+	font-family: 'Asap', sans-serif;
+	font-size: 128px;
+	text-align: center;
+}
+#name h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 26px;
+	letter-spacing: 5px;
+	text-align: center;
 }
