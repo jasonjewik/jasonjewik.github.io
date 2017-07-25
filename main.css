@@ -1,6 +1,14 @@
+* {
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	background: url("background.jpg");
+	background-size: cover;
 }
 
 header {
@@ -27,7 +35,6 @@ header p {
 	padding: 20px;
 	margin: 0px;
 }
-
 
 #profile-img {
 	border-radius: 25%;
