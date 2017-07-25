@@ -1,62 +1,83 @@
 * {
+	/*Debug: enable below line to see all boxes*/
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
+/*set the background image*/
 body {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	background: url("background.jpg");
+	background: url("background.jpg") no-repeat;
 	background-size: cover;
 }
 
-header {
-	padding: 20px;
+/*header*/
+.header-bg {
+	background-color: black;
 }
 
-header .row,
-footer .row {
+header .row {
 	display: flex;
 	align-items: center;
+	padding: 20px 0px;
 }
-
 header h1 {
-	font-weight: 700;
-	margin: 0px;
+	color: white;
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	margin: 0;
 }
-
 header nav {
 	display: flex;
 	justify-content: flex-end;
 }
-
 header p {
-	padding: 20px;
+	color: Gainsboro;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	padding: 0px 20px;
 	margin: 0px;
 }
-
-#profile-img {
-	border-radius: 25%;
-	width: 128px;
-	height: 128px;
+/*change color on hover*/
+header p:hover {
+	color: Ghostwhite;
+}
+/*move down like a button when clicked*/
+header p:active {
+	padding-top: 2px;
 }
 
-footer {
-	font-size: 12px;
-	padding: 20px;
+/*section*/
+/*set the image*/
+section img {
+	margin-top: -100px;
+	margin-bottom: -500px;
+}
+/*move down like a button when clicked*/
+section img:active {
+	padding-top: 4px;
 }
 
-footer .col-sm-8 {
+
+/*more info*/
+#info {
+	margin-top: 100px;
+	align-items: center;
+}
+section p {
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
 	display: flex;
-	justify-content: flex-end;
+	padding: 0px 40px;
 }
-
-footer ul {
-	list-style: none;
+section p:hover {
+	background-color: black;
+	color: white;
 }
-
-footer li img {
-	width: 32px;
-	height: 32px;
+section p:active {
+	padding-top: 2px;
 }
