@@ -5,18 +5,11 @@
 	padding: 0;
 }
 
-/*set the background image*/
-body {
-	background: url("background.jpg") no-repeat;
-	background-size: cover;
-}
-
 /*header*/
 .header-bg {
 	background-color: black;
 }
-
-header .row {
+header .row, footer .row {
 	display: flex;
 	align-items: center;
 	padding: 20px 0px;
@@ -31,29 +24,15 @@ header nav {
 	display: flex;
 	justify-content: flex-end;
 }
-header p {
+header p, footer p {
 	color: Gainsboro;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	padding: 0px 20px;
 	margin: 0px;
 }
-/*change color on hover*/
-header p:hover {
+/*change color and move on hover*/
+header p:hover, footer p:hover {
 	color: Ghostwhite;
-}
-/*move down like a button when clicked*/
-header p:active {
 	padding-top: 2px;
-}
-
-/*section*/
-/*set the image*/
-section img {
-	margin-top: -100px;
-	margin-bottom: -500px;
-}
-/*move down like a button when clicked*/
-section img:active {
-	padding-top: 4px;
 }
