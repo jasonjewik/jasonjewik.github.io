@@ -85,6 +85,7 @@ footer h6 {
 	margin: 0px;
 	display: flex;
 	justify-content: center;
+	position: relative;
 }
 #name h1 {
 	font-family: 'Asap', sans-serif;

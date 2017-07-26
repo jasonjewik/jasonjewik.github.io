@@ -5,9 +5,9 @@
 	padding: 0;
 }
 
-/*set the background image*/
+/*set the background*/
 body {
-	background: url("background.jpg") no-repeat;
+	background-image: url("background.jpg");
 	background-size: cover;
 }
 
@@ -15,8 +15,7 @@ body {
 .header-bg {
 	background-color: black;
 }
-
-header .row {
+header .row, footer .row {
 	display: flex;
 	align-items: center;
 	padding: 20px 0px;
@@ -31,25 +30,64 @@ header nav {
 	display: flex;
 	justify-content: flex-end;
 }
-header p {
+header p, footer p {
 	color: Gainsboro;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 700;
 	padding: 0px 20px;
 	margin: 0px;
 }
-/*change color on hover*/
-header p:hover {
+/*change color and move on hover*/
+header p:hover, footer p:hover {
 	color: Ghostwhite;
-}
-/*move down like a button when clicked*/
-header p:active {
 	padding-top: 2px;
+}
+
+/*footer background*/
+.footer-bg {
+	background-color: #41394f;
+	height: 200px;
+}
+footer img {
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 0px 20px;
+	display: flex;
+}
+#mail {
+	margin-top: 2px;
+	width: 48px;
+}
+#github {
+	margin-top: 2px;
+}
+footer h5 {
+	font-family; "Ubuntu", sans-serif;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 4px;
+}
+footer h5:hover {
+	color: black;
+	background: white;
+}
+footer h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 /*section*/
 section {
 	display: flex;
 	justify-content: center;
-	margin-top: 75px;
+	margin: 75px;
+	height: 420px;
 }

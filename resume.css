@@ -36,3 +36,44 @@ header p:hover, footer p:hover {
 	color: Ghostwhite;
 	padding-top: 2px;
 }
+
+/*footer background*/
+.footer-bg {
+	background-color: #41394f;
+	height: 200px;
+}
+footer img {
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 0px 20px;
+	display: flex;
+}
+#mail {
+	margin-top: 2px;
+	width: 48px;
+}
+#github {
+	margin-top: 2px;
+}
+footer h5 {
+	font-family; "Ubuntu", sans-serif;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 4px;
+}
+footer h5:hover {
+	color: black;
+	background: white;
+}
+footer h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}

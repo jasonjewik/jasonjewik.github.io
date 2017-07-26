@@ -3,7 +3,6 @@
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 }
 
 /*header*/
@@ -12,6 +11,7 @@
 }
 header .row, footer .row {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	padding: 20px 0px;
 }
@@ -93,8 +93,10 @@ footer h6 {
 }
 #profile-img {
 	border-radius: 100%;
-	width: 15em;
-	height: 15em;
+	width: 75%;
+	height: 75%;
+	max-width: 240px;
+	max-height: 240px;
 }
 #text {
 	font-family: "Asap", sans-serif;
