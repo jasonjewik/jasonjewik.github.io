@@ -19,9 +19,9 @@
 	<!--link to boostrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
-<body>
+<body>	
 	<!--The header of the page-->
-	<div class="header-bg">
+	<div class="header-bg" id="top">
 		<header class="container">
 			<div class="row">
 				<h1 class="col-sm-4">Projects</h1>
@@ -32,22 +32,60 @@
 					<a href="blog.html"><p>blog</p></a>
 					<a href="projects.html"><p>projects</p></a>
 					<a href="resume.html"><p>resume</p></a>
-					<a href="contact.html"><p>contact</p></a>
 				</nav>
 			</div>
 		</header>
 	</div>
 	
+	<!--navbar to different projects-->
+	<section class="container">
+		<nav class="col-sm-12">
+			<ul>
+				<a href="#interitus"><li>Interitus</li></a>
+				<a href="#infi"><li>The Infi-Gen</li></a>
+				<a href="#robo"><li>WHS Robotics</li></a>
+			</ul>
+		</nav>
+	</section>
+	
 	<!--Project images-->
 	<section class="container">
-		<div class="row">
+		<div class="row" id="interitus">
 			<a href="https://redqafine.itch.io/interitus" target=_blank><img src="interitus.jpg" class="col-sm-12">
-			<p class="col-sm-12">Interitus</p></a>
+			<p class="col-sm-12">Interitus -- Programmer</p></a>
 		</div>
-		<div class="row">
+		<div class="row" id="infi">
 			<a href="https://redqafine.itch.io/the-infi-gen" target=_blank><img src="infigen.jpg" class="col-sm-12">
-			<p class="col-sm-12">The Infi-gen</p></a>
+			<p class="col-sm-12">The Infi-gen -- Programmer</p></a>
+		</div>
+		<div class="row" id="robo">
+			<a href="https://github.com/WHSRobotics" target=_blank><img src="robotics.jpg" class="col-sm-12">
+			<p class="col-sm-12">WHS Robotics -- Programmer & Graphic Designer</p></a>
+		</div>
 	</section>
+	
+	<!--footer-->
+	<div class="footer-bg">
+		<footer class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<a href="https://github.com/jj11d7t/jj11d7t.github.io"><p>Source Code</p></a>
+				</div>
+				<div class="col-sm-2">
+					<a href="#top"><h5>Back to Top</h5></a>
+				</div>
+				<!--important link icons-->
+				<div class="col-sm-5">
+					<a href="https://www.github.com/jj11d7t"><img src="github_logo.png"id="github"></a>
+					<a href="https://www.linkedin.com/in/jason-jewik-7568b3142/"><img src="linkedin_logo.png"></a>
+					<a href="mailto:jason.jewik@gmail.com"><img src="email_logo.png" id="mail"></a>
+				</div>
+			</div>
+			<div class="row">
+				<h6 class="col-sm-12">&copy Jason Jewik 2017</h6>
+			</div>
+		</footer>
+	</div>
 	
 </body>
 </html>

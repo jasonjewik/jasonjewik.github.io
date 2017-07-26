@@ -48,12 +48,8 @@ header p:active {
 }
 
 /*section*/
-/*set the image*/
-section img {
-	margin-top: -100px;
-	margin-bottom: -500px;
-}
-/*move down like a button when clicked*/
-section img:active {
-	padding-top: 4px;
+section {
+	display: flex;
+	justify-content: center;
+	margin-top: 75px;
 }
