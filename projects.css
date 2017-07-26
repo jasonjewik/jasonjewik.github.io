@@ -36,3 +36,13 @@ header p:hover, footer p:hover {
 	color: Ghostwhite;
 	padding-top: 2px;
 }
+
+section .row {
+	margin: 40px 0px;
+}
+section p {
+	margin-top: 10px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
