@@ -23,7 +23,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </head>
-<body>	
+<body onload="loadName('jj', 'Jason Jewik')">	
 	<!--The header of the page-->
 	<div class="header-bg" id="top">
 		<header class="container">
@@ -41,16 +41,45 @@
 		</header>
 	</div>
 	
+	<!--name and brief desc-->
 	<section class="jumbotron" id="name">
 		<div class="container">
 			<div class="row">
-				<h1 class="col-sm-12">Jason Jewik</h1>
+				<h1 class="col-sm-12" id="jj"></h1>
 			</div>
 			<div class="row">
-				<h3 class="col-sm-12">Programmer and Developer</h3>
+				<h3 class="col-sm-12" id="desc"></h3>
 			</div>
 		</div>
 	</section>	
+	
+	<section class="container" id="meh">
+		<div class="row" id="welcome">
+			<h1 class="col-sm-12">Welcome!</h1>
+			<h1 class="col-sm-12">Thanks for stopping by! If there's anything you need, check out the navigation bar at the very top, or keep scrolling. Up to you.</h1>
+		</div>
+		<div class="line"></div>
+		<div class="row" id="about">
+			<h1 class="col-sm-4">About</h1>
+			<div class="col-sm-2"></div>
+			<h3 class="col-sm-6" id="about-info">I'm an intrepid high schooler who loves everything programming! So far, I've learned Java and HTML (among a few others), and I'm excited to learn more and see how far I can push what programming can do. Check out my <a href="about.html">'About' page</a> for more info.</h3>
+		</div>
+		<div class="row" id="blog">
+			<h1 class="col-sm-4">Blog</h1>
+			<div class="col-sm-2"></div>
+			<h3 class="col-sm-6" id="blog-info">I keep all sorts of neato stuff on my blog like development logs of the video games I'm working on, updates on the projects I'm doing, or other cool stuff! Check out my <a href="blog.html">'Blog' page</a> to see more.</h3>
+		</div>
+		<div class="row" id="projects">
+			<h1 class="col-sm-4">Projects</h1>
+			<div class="col-sm-2"></div>
+			<h3 class="col-sm-6" id="projects-info">Most of the projects I've worked on are heavily programming-based, such as two video games and the code for FTC competition robots. In addition to those, I'm currently working on something cool with a professor at USC, more on that to come! Check out my <a href="projects.html">'Projects' page</a> to check out some of the fun stuff I've been up to.</h3>
+		</div>
+		<div class="row" id="resume">
+			<h1 class="col-sm-4">Resume</h1>
+			<div class="col-sm-2"></div>
+			<h3 class="col-sm-6" id="resume-info">What would a resume website be without a resume? Currently, I'm simultaneously attending Gretchen Whitney High School for general education and Cerritos Community College for computer programming. Beyond just education, I've also gained some professional work experience over the years with various employers. Check out my <a href="resume.html">'Resume' page</a> to learn more.</h3>
+		</div>
+	</section>
 	
 	<!--footer-->
 	<div class="footer-bg">
@@ -74,5 +103,35 @@
 			</div>
 		</footer>
 	</div>
+	
+	<script>
+		alert('Welcome! This site is currently under construction, but feel free to look. \nBest viewed on desktop at a minimum width of 992px.');
+		
+		var blinky_thing = "|";
+		var next = false;
+		
+		function loadName(arg1, arg2) {
+			var elem = document.getElementById(arg1);
+			var str = arg2;
+			var timer = setInterval(time_delay, 75);
+			var len = str.length;
+			var pos = 0;
+			
+			function time_delay() {
+				elem.innerHTML = elem.innerHTML.substr(0, pos);
+				elem.innerHTML += str.charAt(pos);
+				if (pos < len) {
+					pos++;
+					if (pos < len - 1) elem.innerHTML += blinky_thing;
+				} else {
+					clearInterval(time_delay);
+					if (!next) {
+						loadName('desc', 'Programmer and Developer');
+						next = true;
+					} 
+				}
+			}
+		}
+	</script>
 </body>
 </html>

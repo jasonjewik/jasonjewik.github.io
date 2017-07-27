@@ -77,3 +77,30 @@ footer h6 {
 	display: flex;
 	justify-content: center;
 }
+
+/*middle section*/
+#mid {
+	margin: 40px auto;
+}
+#work, #edu {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	letter-spacing: 2px;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin: 10px 0px;
+}
+.line {
+	border: 1px solid black;
+	background-color: black;
+}
+#work_list, #edu_list {
+	margin: 20px auto;
+	text-align: left;
+	font-size: 18px;
+}
+
+/*get rid of the derp underlines on hover*/
+.smoothScroll:hover {
+	text-decoration: none;
+}

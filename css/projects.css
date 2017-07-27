@@ -117,6 +117,11 @@ section img {
 	min-width: 100%;
 	min-height: 1280px;
 }
+/*projects*/
+#interitus, #infi, #robo {
+	animation-name: slideUp;
+	animation-duration: 1s;
+}
 /*Descriptions*/
 #interitus-button, #infi-button, #robo-button {
 	text-align: right;
@@ -124,4 +129,46 @@ section img {
 #interitus-button:hover, #infi-button:hover, #robo-button:hover {
 	cursor: pointer;
 	color: #58ACFA;
+}
+#interitus-info, #infi-info, #robo-info {
+	display: none;
+}
+
+/*animations*/
+/*initial animation*/
+@-webkit-keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+/*animation on click of more info*/
+@-webkit-keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-70%);
+	} 
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes slideBack {
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-70%);
+	}
+}
+
+/*get rid of the derp underlines on hover*/
+.smoothScroll:hover {
+	text-decoration: none;
 }
