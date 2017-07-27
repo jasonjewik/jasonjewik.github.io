@@ -40,14 +40,11 @@
 	</div>
 	
 	<!--image in the middle of the page-->
-	<section class="container" >
-		<div class="col-sm-4 col-md-offset-2">
-			<img src="images/ihimgat.png" id="cover" onclick="destroy()">
+	<div>
+	<section class="container">
+		<div class="col-sm-4 col-md-offset-2" id="cover">
+			<img src="images/ihimgat.png" onclick="destroy()">
 		</div>
-	</section>
-	
-	<!--actual blog-->
-	<section class="container" id="blog">
 	</section>
 	
 	<!--footer-->
@@ -74,7 +71,7 @@
 	</div>
 	
 	<script>
-		alert('Incomplete page! Clicking the text will make it disappear though.');
+		//alert('Incomplete page! Clicking the text will make it disappear though.');
 		
 		function destroy() {
 			var toDestroy = document.getElementById('cover');

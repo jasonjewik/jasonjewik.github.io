@@ -5,6 +5,11 @@
 	padding: 0;
 }
 
+body {
+	background: url("backgrounds/paper.jpg");
+	background-size: cover;
+}
+
 /*header*/
 .header-bg {
 	background-color: black;
