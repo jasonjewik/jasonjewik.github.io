@@ -48,6 +48,7 @@
 				<a href="#interitus" class="smoothScroll"><li>Interitus</li></a>
 				<a href="#infi" class="smoothScroll"><li>The Infi-Gen</li></a>
 				<a href="#robo" class="smoothScroll"><li>WHS Robotics</li></a>
+				<a href="#web" class="smoothScroll"><li>This Website</li></a>
 			</ul>
 		</nav>
 	</section>
@@ -84,6 +85,18 @@
 			In addition to programming video games, I also am a programmer for my school's robotics team, FTC Team 542. Since we participate in FIRST tournaments, the other programmers and myself do all of our work in Java. <br/><br/> Besides programming, I also serve as the team's treasurer and graphic designer. As the former, I work to procure funds for the team and log its expenses. As the latter, I design club shirts and even created an animatic for the team's <a href='https://www.youtube.com/watch?v=x3xtIh1FJyQ'>2017 Promote video.</a>
 			</p>
 		</div>
+		<div class="row" id="web">
+			<a href="https://jj11d7t.github.io/" target=_blank><img src="images/website.jpg" class="col-sm-12">
+			<p class="col-sm-8">jj11d7t.github.io -- Programmer</p></a>
+			<p class="col-sm-4" id="web-button" onclick="openTab(id)">
+				See More
+			</p>
+			<p class="col-sm-12" id="web-info">
+			This website is also a project of mine, one that was actually started pretty recently. Although HTML and CSS were among the first languages I learned, I did not really think about making my own website until the summer of 2017. It had been a while since I used the two languages, and I had never used Boostrap or JavaScript in tandem with them, but I was excited at the challenge and constructed a workable version within a few days.
+			<br/><br/>
+			As of now, the website is still under construction as I try to figure out the right aesthetic, make the code more efficient, and optimize it for all screen sizes so mobile users can view it too. Nonetheless, the source code for this website is publicly available on <a href="https://github.com/jj11d7t/jj11d7t.github.io" target=_blank>Github</a>; feel free to take a look under the hood!
+			</p>
+		</div>
 	</section>
 	
 	<!--footer-->
@@ -113,6 +126,7 @@
 		var interitus_open = false;
 		var infi_open = false;
 		var robo_open = false;
+		var web_open = false;
 		
 		function openTab(elem) {
 			switch (elem) {
@@ -157,6 +171,19 @@
 						setTimeout(function() {_info.style.display = "none";}, 500);
 					}
 					robo_open = !robo_open;
+					break;
+				case "web-button":
+					var _info = document.getElementById("web-info");
+					if (!web_open) {
+						document.getElementById("web-button").innerHTML = "See Less";
+						_info.style.display = "block";
+						_info.style.animation = "slideDown 1s 1 normal";
+					} else {
+						document.getElementById("web-button").innerHTML = "See More";
+						_info.style.animation = "slideBack 1s 1 normal";
+						setTimeout(function() {_info.style.display = "none";}, 500);
+					}
+					web_open = !web_open;
 					break;
 				default: break;
 			}

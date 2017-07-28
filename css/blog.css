@@ -3,11 +3,7 @@
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	background: url("backgrounds/paper.jpg");
-	background-size: cover;
+	box-sizing: border-box;
 }
 
 /*header*/
@@ -82,15 +78,50 @@ footer h6 {
 	display: flex;
 	justify-content: center;
 }
-
-/*section*/
-section {
-	display: flex;
-	justify-content: center;
-	margin: 75px;
-	height: 420px;
-}
 /*get rid of the derp underlines on hover*/
 .smoothScroll:hover {
 	text-decoration: none;
+}
+
+/*actual blog part*/
+section {
+	margin: 2em auto;
+}
+#blog-container {
+	min-height: 420px;
+}
+.post-border {
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 20px auto;
+}
+.post {
+	background: url("backgrounds/paper.jpg");
+	background-size: cover;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+.post-header {
+	margin-bottom: 10px;
+}
+.post-title, .post-text, .post-date {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.post-title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 36px;
+}
+.post-date {
+	float: right;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+.post-text {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
 }
