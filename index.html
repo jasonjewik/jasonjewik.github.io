@@ -23,7 +23,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </head>
-<body onload="loadName('jj', 'Jason Jewik')">	
+<body onload="main()">	
 	<!--The header of the page-->
 	<div class="header-bg" id="top">
 		<header class="container">
@@ -117,7 +117,23 @@
 	</div>
 	
 	<script>
-		//alert('Welcome! This site is currently under construction, but feel free to look. \nBest viewed on desktop at a minimum width of 992px.');
+		function main() {
+			deviceCheck();
+			loadName('jj', 'Jason Jewik');
+		}
+	
+		function deviceCheck(){
+			var ua = navigator.userAgent;
+			var checker = {
+			  iphone: ua.match(/(iPhone|iPod|iPad)/),
+			  android: ua.match(/Android/)
+			};
+			if (checker.android || checker.iphone){
+				alert('Mobile device detected!');
+			} else {
+				alert('Non-mobile device detected!');
+			}
+		}
 		
 		var blinky_thing = "|";
 		var next = false;
