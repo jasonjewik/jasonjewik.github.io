@@ -116,6 +116,10 @@ footer h6 {
 #about-info, #blog-info, #projects-info, #resume-info {
 	margin-top: 1em;
 }
+#construct {
+	margin-top: -100px;
+	margin-left: 500px;
+}
 
 .noview {
 	opacity: 0;
