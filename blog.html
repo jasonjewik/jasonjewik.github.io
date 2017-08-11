@@ -21,7 +21,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </head>
-<body>	
+<body onload="main()">	
 	<!--The header of the page-->
 	<div class="header-bg" id="top">
 		<header class="container">
@@ -102,6 +102,21 @@
 	</div>
 	
 	<script>
+	
+	function main() {
+		deviceCheck();
+	}
+	
+	function deviceCheck(){
+		var ua = navigator.userAgent;
+		var checker = {
+			iphone: ua.match(/(iPhone|iPod|iPad)/),
+			android: ua.match(/Android/)
+		};
+		if (checker.android || checker.iphone) {
+			window.location.href="mobile.html";
+		}
+	}
 		//alert('Incomplete page! Clicking the text will make it disappear though.');
 		
 		/*function destroy() {
