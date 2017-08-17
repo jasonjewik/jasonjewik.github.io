@@ -50,6 +50,9 @@
 				<a href="#robo" class="smoothScroll"><li>WHS Robotics</li></a>
 				<a href="#web" class="smoothScroll"><li>This Website</li></a>
 			</ul>
+			<ul>
+				<a href="#whs" class="smoothScroll"><li>WHS:SG</li></a>
+			</ul>
 		</nav>
 	</section>
 	
@@ -95,6 +98,16 @@
 			This website is also a project of mine, one that was actually started pretty recently. Although HTML and CSS were among the first languages I learned, I did not really think about making my own website until the summer of 2017. It had been a while since I used the two languages, and I had never used Boostrap or JavaScript in tandem with them, but I was excited at the challenge and constructed a workable version within a few days.
 			<br/><br/>
 			As of now, the website is still under construction as I try to figure out the right aesthetic, make the code more efficient, and optimize it for all screen sizes so mobile users can view it too. Nonetheless, the source code for this website is publicly available on <a href="https://github.com/jj11d7t/jj11d7t.github.io" target=_blank>Github</a>; feel free to take a look under the hood!
+			</p>
+		</div>
+		<div class="row" id="whs">
+			<video width="1080" height="720" src="videos/whssg.mp4" controls class="video"></video>
+			<p class="col-sm-8">WHS:SG -- Co-founder, host, & editor</p></a>
+			<p class="col-sm-4" id="whs-button" onclick="openTab(id)">
+				See More
+			</p>
+			<p class="col-sm-12" id="whs-info">
+			Whitney High School: Study Guide (WHS:SG) was an online video series created by some friends and myself to help students at our school. It was heavily inspired by the <a href="https://www.youtube.com/user/CrashCourse" target="_blank">Crash Course series</a> on YouTube. I animated the intros for both seasons one and two and hosted the biology series.<br/><br/>It ran for approximately two years before its members decided we could no longer afford the time to do so. Nonethteless, its videos can still be found on the<a href="https://www.youtube.com/channel/UCSIonEY9hN9sigA60d2GQog" target="_blank">YouTube channel of the same name</a>.  
 			</p>
 		</div>
 	</section>
@@ -144,6 +157,7 @@
 		var infi_open = false;
 		var robo_open = false;
 		var web_open = false;
+		var whs_open = false;
 		
 		function openTab(elem) {
 			switch (elem) {
@@ -201,6 +215,19 @@
 						setTimeout(function() {_info.style.display = "none";}, 500);
 					}
 					web_open = !web_open;
+					break;
+				case "whs-button":
+					var _info = document.getElementById("whs-info");
+					if (!whs_open) {
+						document.getElementById("whs-button").innerHTML = "See Less";
+						_info.style.display = "block";
+						_info.style.animation = "slideDown 1s 1 normal";
+					} else {
+						document.getElementById("whs-button").innerHTML = "See More";
+						_info.style.animation = "slideBack 1s 1 normal";
+						setTimeout(function() {_info.style.display = "none";}, 500);
+					}
+					whs_open = !whs_open;
 					break;
 				default: break;
 			}

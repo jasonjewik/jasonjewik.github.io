@@ -118,20 +118,23 @@ section img {
 	min-height: 1280px;
 }
 /*projects*/
-#interitus, #infi, #robo, #web {
+#interitus, #infi, #robo, #web, #whs {
 	animation-name: slideUp;
 	animation-duration: 1s;
 }
 /*Descriptions*/
-#interitus-button, #infi-button, #robo-button, #web-button {
+#interitus-button, #infi-button, #robo-button, #web-button, #whs-button {
 	text-align: right;
 }
-#interitus-button:hover, #infi-button:hover, #robo-button:hover, #web-button:hover {
+#interitus-button:hover, #infi-button:hover, #robo-button:hover, #web-button:hover, #whs-button:hover {
 	cursor: pointer;
 	color: #58ACFA;
 }
-#interitus-info, #infi-info, #robo-info, #web-info {
+#interitus-info, #infi-info, #robo-info, #web-info, #whs-info {
 	display: none;
+}
+.video {
+	padding-left: 5em;
 }
 
 /*animations*/

@@ -94,13 +94,13 @@ footer h6 {
 	border: 1px solid black;
 	background-color: black;
 }
-#work_list, #volunteer_list, #edu_list {
+.list {
 	margin: 20px auto;
 	text-align: left;
 	font-size: 18px;
 }
 
 /*get rid of the derp underlines on hover*/
-.smoothScroll:hover {
+.smoothScroll:hover, .link:hover {
 	text-decoration: none;
 }
