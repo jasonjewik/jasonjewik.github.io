@@ -82,7 +82,7 @@ footer h6 {
 #mid {
 	margin: 40px auto;
 }
-#work, #volunteer, #edu {
+#work, #volunteer, #edu, #more {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -98,6 +98,10 @@ footer h6 {
 	margin: 20px auto;
 	text-align: left;
 	font-size: 18px;
+}
+#more {
+	font-weight: 300;
+	text-align: center;
 }
 
 /*get rid of the derp underlines on hover*/
