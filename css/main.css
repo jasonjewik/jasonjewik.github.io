@@ -82,8 +82,7 @@ footer h6 {
 /*mid section*/
 #name {
 	height: 40em;
-	/*comment*/
-	background-color: #EFFBFB;
+	background-color: #F2FAFB;
 	margin: 0px;
 	display: flex;
 	justify-content: center;
