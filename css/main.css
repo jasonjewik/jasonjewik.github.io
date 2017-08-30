@@ -83,6 +83,7 @@ footer h6 {
 #name {
 	height: 40em;
 	background-color: #EFFBFB;
+	background: url("backgrounds/paper.jpg"); 
 	margin: 0px;
 	display: flex;
 	justify-content: center;
@@ -94,9 +95,8 @@ footer h6 {
 	text-align: center;
 }
 #name h3 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	font-size: 28px;
+	font-family: 'Lobster', cursive;
+	font-size: 48px;
 	letter-spacing: 5px;
 	text-align: center;
 }
