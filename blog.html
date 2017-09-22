@@ -19,7 +19,7 @@
 	
 	<!--JS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+	<script type="text/javascript" src="javascript/jquery.smooth-scroll.js"></script>
 </head>
 <body onload="main()">	
 	<!--The header of the page-->
@@ -132,20 +132,8 @@
 			window.location.href="mobile.html";
 		}
 	}
-		//alert('Incomplete page! Clicking the text will make it disappear though.');
-		
-		/*function destroy() {
-			var toDestroy = document.getElementById('cover');
-			var op = 1;
-			var timer = setInterval(function () {
-				if (op <= 0.1) {
-					clearInterval(timer);
-					toDestroy.remove();
-				}
-				toDestroy.style.opacity = op;
-				op -= op * 0.1;
-			}, 25);
-		}*/
+
+	$('a.smoothScroll').smoothScroll();
 	</script>
 </body>
 </html>

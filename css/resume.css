@@ -109,6 +109,6 @@ footer h6 {
 }
 
 /*get rid of the derp underlines on hover*/
-.smoothScroll:hover, .link:hover {
+.smoothScroll, .link:hover {
 	text-decoration: none;
 }
