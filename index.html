@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 
 	<!--set the website title & icon-->
-	<title>J.K Jewik | Home</title>
+	<title>Jason Jewik</title>
 	<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
 	<!--link to Google Fonts-->
@@ -21,121 +21,40 @@
 	
 	<!--JS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript/jquery.smooth-scroll.js"></script>
 </head>
-<body onload="main()">	
-	<!--The header of the page-->
-	<div class="header-bg" id="top">
-		<header class="container">
-			<div class="row">
-				<h1 class="col-sm-4">Home</h1>
-				<!--The navigation bar-->
-				<nav class="col-sm-8">
-					<a href="index.html"><p>home</p></a>
-					<a href="about.html"><p>about</p></a>
-					<a href="blog.html"><p>blog</p></a>
-					<a href="projects.html"><p>projects</p></a>
-					<a href="resume.html"><p>resume</p></a>
-				</nav>
-			</div>
-		</header>
-	</div>
+
+<body>	
 	
-	<!--name and brief desc-->
-	<section class="jumbotron" id="name">
-		<div class="container">
-			<div class="row">
-				<h1 class="col-sm-12" id="jj"></h1>
-			</div>
-			<div class="row">
-				<h3 class="col-sm-12" id="desc"></h3>
-			</div>
-			<!--<div class="row" id="resume-boxes">
-				<div class="col-sm-6"><a id="game-link"><p class="invis" id="fun">Fun Resume</p></a></div>
-				<div class="col-sm-6"><a id="regular-link"><p class="invis" id="regular">Regular Resume</p></a></div>
-			</div>-->
+	<div id="spacer"></div>
+	<!--name-->
+	<div class="row">
+		<div class="col-sm-1"></div> <!--indent-->
+		<h1 class="col-sm-6">Jason Jewik</h1>
+	</div>
+	<!--tag line-->
+	<div class="row" id="tag">
+		<div class="col-sm-1"></div> <!--indent-->
+		<h3 class="col-sm-6">Software Developer and Programmer</h3>
+	</div>
+	<!--navbar-->
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class ="col-sm-11">
+			<div class="button"><a href="about.html"><p title="About">about</p></a></div>
+			<div class="slash"><p>/</p></div>
+			<div class="button"><a href="blog.html"><p title="Thoughts">thoughts</p></a></div>
+			<div class="slash"><p>/</p></div>
+			<div class="button"><a href="projects.html"><p title="Projects">projects</p></a></div>
+			<div class="slash"><p>/</p></div>
+			<div class="button"><a href="files/pdf.pdf"><p title="Resume">resume</p></a></div>
 		</div>
-	</section>
-	<div class="spacer"></div>
-	
-	<!--footer-->
-	<div class="footer-bg">
-		<footer class="container">
-			<div class="row">
-				<div class="col-sm-2">
-					<a href="https://github.com/jj11d7t/jj11d7t.github.io" target=_blank><p>Source Code</p></a>
-				</div>
-				<div class="col-sm-3"></div>
-				<div class="col-sm-2">
-					<a href="#top" class="smoothScroll"><h5>Back to Top</h5></a>
-				</div>
-				<!--important link icons-->
-				<div class="col-sm-5">
-					<a href="https://www.github.com/jj11d7t" target=_blank><img src="images/github_logo.png"id="github"></a>
-					<a href="https://www.linkedin.com/in/jason-jewik-7568b3142/" target=_blank><img src="images/linkedin_logo.png"></a>
-					<a href="mailto:jason.jewik@gmail.com"><img src="images/email_logo.png" id="mail"></a>
-				</div>
-			</div>
-			<div class="row">
-				<h6 class="col-sm-12">&copy Jason Jewik 2017</h6>
-			</div>
-		</footer>
 	</div>
 	
-	<script>
-		function main() {
-			deviceCheck();
-			loadName('jj', 'Jason Jewik');
-			removeClass();
-		}
-	
-		function deviceCheck(){
-			var ua = navigator.userAgent;
-			var checker = {
-				iphone: ua.match(/(iPhone|iPod|iPad)/),
-				android: ua.match(/Android/)
-			};
-			if (checker.android || checker.iphone) {
-				window.location.href="mobile.html";
-			}
-		}
-		
-		var blinky_thing = "|";
-		var next = false;
-		
-		function loadName(arg1, arg2) {
-			var elem = document.getElementById(arg1);
-			var str = arg2;
-			var timer = setInterval(time_delay, 75);
-			var len = str.length;
-			var pos = 0;
-			
-			function time_delay() {
-				elem.innerHTML = elem.innerHTML.substr(0, pos);
-				elem.innerHTML += str.charAt(pos);
-				if (pos < len) {
-					pos++;
-					if (pos < len - 1) elem.innerHTML += blinky_thing;
-				} else {
-					clearInterval(time_delay);
-					if (!next) {
-						loadName('desc', 'Programmer and Developer');
-						next = true;
-					} 
-				}
-			}
-		}
-		
-		function removeClass() {
-			setTimeout(function() {
-				var elem = document.getElementById("fun").removeAttribute("class");
-				var elem2 = document.getElementById("regular").removeAttribute("class");
-				var elem3 = document.getElementById("game-link").setAttribute("href", "game.html");
-				var elem4 = document.getElementById("regular-link").setAttribute("href", "resume.html");
-			}, 3000);
-		}
-		
-		$('a.smoothScroll').smoothScroll();
-	</script>
+	<div id="spacer2"></div>
+	<div class="footer">
+		<img class="icon" src="images/icons/github.svg"/>
+		<img class="icon" src="images/icons/linkedin.svg"/>
+		<img class="icon" src="images/icons/mail.svg"/>
+	</div>
 </body>
 </html>
