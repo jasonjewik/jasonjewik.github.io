@@ -7,8 +7,10 @@
 	overflow: hidden;
 }
 
-body span {
-
+#bar {
+	background-color: #3c78d8ff;
+	height: 2vh;
+	width: 100%;
 }
 
 #title-card::before {

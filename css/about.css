@@ -1,151 +1,15 @@
 * {
-	/*Debug: enable below line to see all boxes*/
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	/*Debug: enable below line to see all boxes
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-/*header*/
-.header-bg {
-	background-color: black;
-	z-index: 2;
-}
-header .row, footer .row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0px;
-}
-header h1 {
-	color: white;
-	font-family: "Lato", sans-serif;
-	font-weight: 900;
-	margin: 0;
-}
-header nav {
-	display: flex;
-	justify-content: flex-end;
-}
-header p, footer p {
-	color: Gainsboro;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	padding: 0px 20px;
-	margin: 0px;
-}
-/*change color and move on hover*/
-header p:hover, footer p:hover {
-	color: Ghostwhite;
-	padding-top: 2px;
-}
-
-/*footer background*/
-.footer-bg {
-	background-color: #41394f;
-	height: 200px;
-}
-footer img {
-	float: right;
-	width: 32px;
-	height: 32px;
-	margin: 0px 20px;
-	display: flex;
-}
-#mail {
-	margin-top: 2px;
-	width: 48px;
-}
-#github {
-	margin-top: 2px;
-}
-footer h5 {
-	font-family; "Ubuntu", sans-serif;
-	font-weight: 400;
-	color: white;
+body h1 {
 	text-align: center;
-	border: 1px solid white;
-	border-radius: 10px;
-	padding: 4px;
-}
-footer h5:hover {
-	color: black;
-	background: white;
-}
-footer h6 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	color: white;
-	text-align: center;
-	display: flex;
-	justify-content: center;
 }
 
-/*about info*/
-#info {
-	margin-bottom: 10em;
-}
-/*animated sidebar*/
-#sidebar {
-	background-color: #cce0ff;
-	justify-content: center;
-	text-align: center;
-	padding: 48px 0px;
-	border-bottom-left-radius: 5em;
-	border-bottom-right-radius: 5em;
-	z-index: -1;
-	animation-name: sidebar_move;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-}
-@-webkit-keyframes sidebar_move {
-	from {
-		transform: translateY(-100%);
-	}
-	to {
-		transform: translateY(0%);
-	}
-}
-#profile-img {
-	border-radius: 100%;
-	width: 75%;
-	height: 75%;
-	max-width: 240px;
-	max-height: 240px;
-}
-/*animated text*/
-#text {
-	font-family: "Asap", sans-serif;
-	font-weight: 500;
-	font-size: 18px;
-	padding-top: 3em;
-	padding-right: 2em;
-	animation-name: text_move;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-}
-@-webkit-keyframes text_move {
-	from {
-		transform: translateY(-20%);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0%);
-		opacity: 1;
-	}
-}
-
-.spacer {
-	flex: 1;
-}
-
-/*get rid of the derp underlines on hover*/
-.smoothScroll:hover {
-	text-decoration: none;
+nav {
+	margin: 1vh;
 }
