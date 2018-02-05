@@ -13,48 +13,44 @@
 	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 	
-	<!--link to css-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-
 	<!--link to boostrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
-	<!--JS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--link to css-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>	
-	
-	<div id="spacer"></div>
-	<!--name-->
-	<div class="row">
-		<div class="col-sm-1"></div> <!--indent-->
-		<h1 class="col-sm-6">Jason Jewik</h1>
-	</div>
-	<!--tag line-->
-	<div class="row" id="tag">
-		<div class="col-sm-1"></div> <!--indent-->
-		<h3 class="col-sm-6">Software Developer and Programmer</h3>
-	</div>
-	<!--navbar-->
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class ="col-sm-11">
-			<div class="button"><a href="about.html"><p title="About">about</p></a></div>
-			<div class="slash"><p>/</p></div>
-			<div class="button"><a href="blog.html"><p title="Thoughts">thoughts</p></a></div>
-			<div class="slash"><p>/</p></div>
-			<div class="button"><a href="projects.html"><p title="Projects">projects</p></a></div>
-			<div class="slash"><p>/</p></div>
-			<div class="button"><a href="files/pdf.pdf"><p title="Resume">resume</p></a></div>
+<body>		
+	<!--title card-->
+	<div class="container" id="title-card">
+		<div class="row" id="name">
+			<h1>Jason Jewik</h1>
+		</div>
+		<div class="row" id="tag">
+			<h3>Software Developer and Programmer</h3>
+		</div>
+		<div class="row" id="navigation">
+			<ul class="list-inline">
+				<li class="redir" title="about">about</li>
+				<li>/</li>
+				<li class="redir" title="thoughts">thoughts</li>
+				<li>/</li>
+				<li class="redir" title="projects">projects</li>
+				<li>/</li>
+				<li class="redir" title="site-map">site-map</li>
+			</ul>
 		</div>
 	</div>
 	
-	<div id="spacer2"></div>
-	<div class="footer">
-		<img class="icon" src="images/icons/github.svg"/>
-		<img class="icon" src="images/icons/linkedin.svg"/>
-		<img class="icon" src="images/icons/mail.svg"/>
+	<!--links to stuff-->
+	<div class="container" id="footer">
+		<div class="row">
+			<ul class="list-inline">
+				<li class="ext-links"><img src="images/icons/mail.svg" class="icon"></img></li>
+				<li class="ext-links"><img src="images/icons/linkedin.svg" class="icon"></img></li>
+				<li class="ext-links"><img src="images/icons/github.svg" class="icon"></img></li>
+			</ul>
+		</div>
 	</div>
 </body>
 </html>

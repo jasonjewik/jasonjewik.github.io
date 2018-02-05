@@ -6,47 +6,48 @@
 	box-sizing: border-box;*/
 	overflow: hidden;
 }
-body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+
+body span {
+
 }
-#spacer {
-	flex: 0.25;
+
+#title-card::before {
+	height: 20vh;
+}
+#title-card {
+	min-width: 50vw;
+	margin-left: 5vw;
+}
+#tag {
+	margin-top: -3%;
 }
 body h1 {
 	font-family: "Ubuntu", sans-serif;
 	font-size: 7vw;
-	background-color: transparent;
 }
 body h3 {
 	font-family: "Lato", sans-serif;
 	font-size: 2.5vw;
 }
-#tag {
-	margin-top: -30px;
-}
-.button, .slash {
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.button p, .slash p {
+li {
 	font-family: "Asap", sans-serif;
 	font-size: 1.5vw;
 }
-.button:hover, .icon:hover {
+.redir:hover {
 	cursor: pointer;
 }
-#spacer2 {
-	flex: 0.60;
-}
-.footer {
-	text-align: right;
-	margin-right: 5vw;
-}
 .icon {
-	margin: 1%;
-	width: 3vw;
-	height: 3vw;
+	min-width: 3vw;
+	min-height: 3vw;
+	margin: 2vh;
+}
+.ext-links {
+	float: right;
+}
+#footer::before {
+	height: 30vh;
+}
+#footer {
+	min-width: 50vw;
+	margin-right: 5vw;
 }
