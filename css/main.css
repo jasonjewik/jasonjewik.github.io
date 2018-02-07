@@ -35,8 +35,8 @@ li {
 	font-family: "Asap", sans-serif;
 	font-size: 1.5vw;
 }
-.redir:hover {
-	cursor: pointer;
+a:hover {
+	text-decoration: none;
 }
 .icon {
 	min-width: 3vw;
