@@ -1,114 +1,67 @@
-* {
-	/*Debug: enable below line to see all boxes*/
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
-	margin: 0;
-	padding: 0;
+#bar {
+	background-color: #3c78d8ff;
+	height: 2vh;
+	width: 100%;
 }
 
-/*header*/
-.header-bg {
-	background-color: black;
+#nav {
+	padding: 1vh;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	width: 67%;
+	border-radius: 2vh;
 }
-header .row, footer .row {
-	display: flex;
-	align-items: center;
-	padding: 20px 0px;
+
+.list-inline {
+	margin: 2vh auto 2vh auto;
+	padding-left: 1%;
 }
-header h1 {
-	color: white;
+
+li {
+	font-size: 1.25vw;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #283593;
+}
+
+.active {
+	color: #B0BEC5;
+}
+.active:hover {
+	color: #757575;
+}
+
+#content {
+	width: 80vw;
+}
+
+body h1 {
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-size: 3.5vw;
+	font-weight: 900;
+	margin-top: 0px;
+	margin-bottom: 2vh;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+	font-family: "Asap", sans-serif;
+	font-size: 1.5vw;
+	width: 25vw;
+}
+
+.group {
+    background-color: #f3f3f3;
 	font-family: "Lato", sans-serif;
 	font-weight: 900;
-	margin: 0;
-}
-header nav {
-	display: flex;
-	justify-content: flex-end;
-}
-header p, footer p {
-	color: Gainsboro;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	padding: 0px 20px;
-	margin: 0px;
-}
-/*change color and move on hover*/
-header p:hover, footer p:hover {
-	color: Ghostwhite;
-	padding-top: 2px;
 }
 
-/*footer background*/
-.footer-bg {
-	background-color: #41394f;
-	height: 200px;
-}
-footer img {
-	float: right;
-	width: 32px;
-	height: 32px;
-	margin: 0px 20px;
-	display: flex;
-}
-#mail {
-	margin-top: 2px;
-	width: 48px;
-}
-#github {
-	margin-top: 2px;
-}
-footer h5 {
-	font-family; "Ubuntu", sans-serif;
-	font-weight: 400;
-	color: white;
-	text-align: center;
-	border: 1px solid white;
-	border-radius: 10px;
-	padding: 4px;
-}
-footer h5:hover {
-	color: black;
-	background: white;
-}
-footer h6 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	color: white;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-}
-
-/*middle section*/
-#mid {
-	margin: 40px auto;
-}
-#work, #volunteer, #edu {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	letter-spacing: 2px;
-	font-size: 36px;
-	text-transform: uppercase;
-	margin: 10px 0px;
-}
-.line {
-	border: 1px solid black;
-	background-color: black;
-}
-.list {
-	margin: 20px auto;
-	text-align: left;
-	font-size: 18px;
-}
-#more {
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 2px;
-	font-size: 36px;
-	text-transform: uppercase;
-	font-weight: 300;
-	text-align: center;
-}
-
-/*get rid of the derp underlines on hover*/
-.smoothScroll, .link:hover {
-	text-decoration: none;
+table {
+	margin: 2vh auto 2vh auto;
 }
