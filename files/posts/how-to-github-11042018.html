@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+
+	<!--set the website title & icon-->
+	<title>Blog - Jason Jewik</title>
+	<link rel="shortcut icon" type="image/png" href="../../favicon.ico"/>
+
+	<!--link to Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<!--link to boostrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--css-->
+	<style>
+		#bar {
+			background-color: #3c78d8ff;
+			height: 2vh;
+			width: 100%;
+		}
+		#nav {
+			padding: 1vh;
+			overflow: hidden;
+			border: 1px solid #e7e7e7;
+			background-color: #f3f3f3;
+			width: 67%;
+			border-radius: 2vh;
+		}
+
+		.list-inline {
+			margin: 2vh auto 2vh auto;
+			padding-left: 1%;
+		}
+
+		li {
+			font-size: 1.25vw;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #283593;
+		}
+
+		.active {
+			color: #B0BEC5;
+		}
+		.active:hover {
+			color: #757575;
+		}
+
+		#content {
+			width: 80vw;
+		}
+
+		body h1, h3 {
+			text-align: center;
+		}
+
+		body h1 {
+			font-family: "Lato", sans-serif;
+			font-size: 3.5vw;
+			font-weight: 900;
+			margin-top: 0px;
+			margin-bottom: vh;
+		}
+
+		body h3 {
+			font-family: "Ubuntu", sans-serif;
+			font-size: 2vw;
+			font-weight: 400;
+			margin-bottom: 4vh;
+		}
+
+		body p {
+			font-family: "Asap", sans-serif;
+			font-size: 1.4vw;
+			margin-bottom: 2vh;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="bar"></div>
+
+	<div class="container" id="content">
+		<ul class="list-inline" id="nav">
+			<li><a href="index.html" title="home">home</a><li>
+			<li>/</li>
+			<li><a href="../../about.html" title="about">about</a></li>
+			<li>/</li>
+			<li><a href="../../blog.html" class="active" title="thoughts">thoughts</a></li>
+			<li>/</li>
+			<li><a href="../../projects.html" title="projects">projects</a></li>
+			<li style="float:right"><a href="sitemap.html" title="site-map">site-map</a></li>
+		</ul>
+
+
+		<!--CHANGE ONLY THIS PART-->
+		<div class="row">
+			<h1>How to Github for Unreal Projects</h1>
+			<h3>11 April 2018</h3>
+		</div>
+
+		<div class="row" style="margin-bottom: 7vh">
+			<div class="col-sm-8 col-sm-offset-2">
+				<p><em>Originally for Intermediate Game Design class</em><br/>-----</p>
+				<h2>What is GitHub?</h2>
+				<p>
+				According to their website’s About Page… “GitHub is how people build software”. Okay, but what exactly does that mean? To use an analogy, GitHub is basically Google Drive for programmers. For those of you who know what GitHub is actually capable (and not capable of), the analogy falls a bit short, but it gets a general idea across: GitHub can be used to synchronize project files across different computers.
+				</p>
+				<p>
+				As game developers, this is something that we need to do if we want to effectively work on games that involve more than one person. Without GitHub (like when we worked on our first semester Stencyl projects), there’s a lot of either going back-and-forth where one person puts something in, then uploads it, then someone else downloads it, makes changes, then uploads it, then the next person… and so on. And while all that’s happening, only one person can (or should be) making changes at a time. Otherwise, oops, now we have different changes that we have to copy over n amount of times for the n number of people on the team.
+				</p>
+				<p>
+				With GitHub, we don’t need to do that anymore. Everyone can work on the project simultaneously and GitHub does this magical thing of putting all together for us. However, GitHub fails if different people are all trying to edit the same thing. Going back to the Google Drive analogy, it’s nice and all that it lets us collaborate with people on the same doc at the same time, but if one person’s trying to type something up while someone else was already typing on the same line, you get this garbled mess where words clash and sentences get cut. Same thing with GitHub. Specifically, it’s referred to as a ‘merge-conflict’, but we’ll talk about that when we need to. Hopefully that time will never come.
+				</p>
+				<h2>Setting up a GitHub Account</h2>
+				<p>
+				To set up an account on GitHub, go to <a href="https://github.com">https://github.com/</a>. You should be greeted with the sign-up screen. Go ahead and create an account. Once you have your account set up, you can quickly access it by going to <a href="https://github.com">https://github.com/your-username</a>. Assuming you’re signed in, you can also access it just by going to <a href="https://github.com">https://github.com</a> as well.
+				</p>
+				<h2>Additional Readings Pt. 1</h2>
+				<p><a href="https://www.atlassian.com/git/tutorials/what-is-version-control">
+					https://www.atlassian.com/git/tutorials/what-is-version-control
+				</a><br/>
+				<a href="https://www.atlassian.com/git/tutorials/what-is-git">
+					https://www.atlassian.com/git/tutorials/what-is-git
+				</a><br/>
+				<a href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/ ">
+					https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/
+				</a></p>
+
+				<h2>Creating the Repository</h2>
+				<p>
+				Repositories (aka Repos) are the spaces where your GitHub projects will be stored. A local repo refers to one on a computer like a laptop or desktop. The remote repo refers to the one hosted on GitHub.
+				</p>
+				<p>
+				So this is what my profile page looks like. Note that to the right of my profile pic, there’s a row of text: ‘Overview, Repositories, Stars, Followers, Following’. Right now, we’re going to head over to the ‘Repositories’ tab, where you should see a list of well, nothing. So let’s get started on adding a repository!
+				</p>
+				<br/><img src="../images/github-profile.png" width=100%><br/><br/>
+				<p>
+				Alright, so once you’re on the repositories page, you should see a screen that looks like the following. We’re going to click on the green button in the upper-righthand corner that says ‘New’. That’ll open up a new repository for us to use.
+				</p>
+				<br/><img src="../images/github-repo-overview.png" width=100%><br/><br/>
+				<p>
+				You can name your repo whatever you want, just note that whenever you want to access it, you can find it at https://github.com/your-username/your-repo-name. Your repo visibility has to be toggled to ‘Public’ (‘Private’ is exclusively for GitHub Pro) and we are going to initialize it with a README.md file. Don’t worry too much about this now — in fact, using a README.md file is a topic for another day since we’d have to learn Markdown to use it effectively. Then select ‘Add .gitignore’ and select ‘UnrealEngine’.
+				</p>
+				<p>
+				TL;DR, a .gitignore file does exactly what it sounds like it would do: it tells Git to ignore files with the user-specified endings. But, we don’t actually need to know what these files are since we can just use the ‘UnrealEngine’ preset, which tells Git to ignore a lot of unnecessary files that don’t need to be uploaded to the remote repo every time you update your project. If you want to read more into it, please do, I actually have no idea what these files are or why we want to ignore them, but that explanation sounded reasonable enough to me, so I just rolled with it.
+				</p>
+				<p>
+				Now that we all of that set up, we can finally create our repository which should take you to a screen that looks something like this:
+				</p>
+				<br/><img src="../images/github-repo.png" width=100%><br/><br/>
+				<p>
+				Once again, yours will be empty, but just to get you familiar with what a repo that has stuff in it would look like, here’s my website’s repo. You can see folders and files marked along with tags that indicate the message of their most recent commit (update) and when that commit happened. What we want to do right now though, is share the repo with our teammates. So click the ‘Settings’ tab along the bar right below your repo name then click the ‘Collaborators’ tab on the left panel. From there, you can add your teammates much like you would via Google Drive.
+				</p>
+				<p>
+				Now, if we head back to the ‘Code’ panel, we can press the green ‘Clone or download’ button to clone our repo. We don’t want to just download it, since that would just give us a zipped file. We want to clone it so that we have a synchronized version. But wait! We don’t have Git or a Git GUI client installed on our computer yet. Time to install one…
+				</p>
+				<h2>Installing Git or a Git GUI Client</h2>
+				<p>
+				First you’ll need to go here: <a href="https://desktop.github.com/">https://desktop.github.com/</a> to install GitHub Desktop. Normally that’d be it, but because Unreal Projects are so massive (and have a lot of binary files), GitHub can’t actually handle them raw. We’ll need to install <a href="https://git-lfs.github.com/">https://git-lfs.github.com/</a> too. Git LFS (Git Large-File-Storage) was created specifically for projects with a ton of files like Unreal games. Lastly, we’ll need to install Git Bash from here: <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.
+				</p>
+				<h2>Cloning the Repository</h2>
+				<p>
+				Now that we have Git and a GitHub Desktop installed, we can finally clone our repo. When prompted to clone the repo, select ‘Open in Desktop’, which should open up GitHub Desktop. Choose a directory and then clone the repo into it. Once it’s done, you should get something that looks like this (once again, this is my personal website’s repo):
+				</p>
+				<br/><img src="../images/github-desktop-repo.png" width=100%><br/><br/>
+				<p>
+				If you check out the ‘History’ tab, you’ll be able to see a changelog of all the modifications you and your teammates have made to this repo’s current branch: the master branch.
+				</p>
+				<h2>Branches</h2>
+				<p>
+				If we think of a GitHub repo like a tree, then branches make a lot more sense. Imagine that the root of our GitHub tree is our first commit - just planting the seed for an awesome project to bloom later on. Imagine that the end goal is the very top of the tree. Now, what would branches on that tree be?
+				</p>
+				<p>
+				Branches are a way for us to try things out before committing them to the ‘master’ branch. So let’s say you want to try out a new menu system, but you’re not really sure if it’ll look good or if it’ll play nicely with everything else you’ve already made. We can just make a branch off of the ‘master’ branch and test it there. Note that the two branches are now separate and that they will not sync with each other. This means that once we’re done testing the new menu system, we’ll have to pull the branches into each other and re-merge everything. On the other hand, if we don’t like what we made, then we can just ‘cut’ the branch by deleting it… and no harm done! The ‘master’ branch (and your main project files) are still there, so everything’s oki-doki.
+				</p>
+				<p>
+				Here’s a diagram that may help you visualize how branches work:
+				</p>
+				<br/><img src="../images/git-branching.png" width=100%><br/><br/>
+				<p>
+				Of course, it is entirely possible for you to finish your project without creating any additional branches — in fact, this may be easier since misuse of branches can lead to some headaches like those awful merge-conflicts I talked about at the very beginning. However, I just wanted to let you know that the feature exists, so if you choose to use it and look all professional, you can.
+				</p>
+				<h2>Setting up Git LFS</h2>
+				<p>
+				To do this, go to the ‘File’ tab in GitHub Desktop and select ‘Options’ then ‘Advanced’. In the ‘Advanced’ tab, where it says ‘Shell’, select ‘Git Bash’ from the dropdown menu then save. Now when you click on the ‘Repository’ tab at the top, you should see in the dropdown menu, an option that says ‘Open in Git Bash’. Select that. It should open up a window that looks like something out of the Matrix. Now you’re a hackerman!
+				</p>
+				<p>
+				Anyway, the reason why we’re here is because we have to initialize Git LFS. Type ‘git lfs install’ then hit enter (whenever I say to type a command in from now on, I mean to hit enter after). Then we’re going to type in ‘git lfs track “*.fbx”’, ‘git lfs track “*.umap”’, ‘git lfs track “*.uasset”’, ‘git lfs track “*.uproject”’. Make sure these are all spelled correctly! These are the Unreal assets that we want Git LFS to take care of rather than our regular repo. To double-check that you got all of them, you can type in ‘git lfs track’ and that should list every file type that Git LFS is tracking.
+				</p>
+				<p>
+				Once those changes have been made, go back to GitHub Desktop. You should see some new changes showing up in the ‘Changes’ tab of your repo. Write the commit message to whatever you want, I would recommend saying ‘Modified .gitattributes’ (and if you want, you can write a description too, though that’s not necessary). Then, press ‘Commit to master’ then ‘Push to Origin’.
+				</p>
+				<h2>Additional Readings Pt. 2</h2>
+				<p>
+				So you may have noted that throughout this, I interchangeably used ‘Git’, ‘GitHub’, ‘Git GUI Client’, and other words prefixed with ‘Git’. That’s because GitHub is actually just one way of doing version control using Git. You could also use GitLab or BitBucket. GitHub Desktop can also be switched out too! There are alternative Git GUI Clients such as GitKraken or SourceTree, which mostly change how the application looks, but also provide different functionality. Alternatively, if you want to be super old-school-cool, you could use Git straight from Powershell or Bash. Of course, it’s a bit harder since you’d need to learn all the commands and stuff (and trust me, this tutorial is barely scratching the surface of what Git can do, but don’t worry, it’ll be enough for you to get started and get your project going).
+				</p>
+				<p>
+				<a href="https://try.github.io">
+					https://try.github.io
+				</a><br/>
+				<a href="https://www.gitkraken.com/">
+					https://www.gitkraken.com/
+				</a><br/>
+				<a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">
+					https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+				</a><br/>
+				<a href="https://www.atlassian.com/git/tutorials/git-lfs">
+					https://www.atlassian.com/git/tutorials/git-lfs
+				</a><br/>
+				</p>
+
+				<h2>Create your Unreal Engine Project</h2>
+				<p>
+				Create your Unreal Engine project within your local repo. So for instance, my local repos are saved to C:\Users\Jason Jewik\Documents\GitHub\repo-name. Once your project has been made, open the ‘Source Control’ tab on the top panel next to ‘Save’. From the dropdown menu for ‘Provider’, choose ‘Git’. Unreal Engine should automatically populate the path to your git.exe file. If it doesn’t… your git path should be somewhere like C:\Program Files\Git\bin\git.exe. Accept settings, and now we’re hooked up to version control!
+				</p>
+				<p>
+				Now go back to GitHub desktop, and you should note that there are changes! We want to add the .uproject file, so just the same as before with setting up Git LFS, we’ll want to write a commit message, commit the change, then push to origin. Note that the changes committed are only the ones with a checkbox beside them.
+				</p>
+				<p>
+				If you’d like, check your GitHub repo to ensure that the file was uploaded. We should now have a .gitignore in there, a README.md, and a .uproject file. If you check the .uproject file, it should actually be less than a kilobyte in size because of Git LFS. Magic! (Unless you read the additional readings and know better. Pointers!)
+				</p>
+				<p>
+				If you want to get rid of a change, you can right-click on the changed file and select ‘Discard changes’. If you want to get rid of all changes since your local repo last synchronized with the remote repo, you can select ‘Discard all changes’.
+				</p>
+				<h2>Getting GitHub to Track Files</h2>
+				<p>
+				When you create files in your project (let’s say a level), their icons in the Content Browser will have a little question mark in the upper-righthand corner. This means that Git isn’t tracking that level’s changes. This is great if you just want to test something locally on your computer that you aren’t sure if you want to add to the remote repo. Now, let’s create a new level. Let’s say that this level is the final version and you want GitHub to track it. Right-click on it and you should see ‘Source Control’ at the bottom. Click it then click ‘Mark for add’. The question mark should turn into a plus sign to denote that Git has noticed there are some differences between the remote repo’s version of that final (or lack thereof) and your local repo’s version. If files had things removed, then it would be a minus sign.
+				</p>
+				<p>
+				Now that Git is tracking our level, go back to the ‘Source Control’ tab. Then select ‘Submit to Source Control’. You should see a changelist with the one level we added. Give it a description then press ‘Ok’.
+				</p>
+				<p>
+				Go back to GitHub and check ‘History’. You should see that your commit is there, but it’s only on the local repo. Now, push it up to the origin and ta-da! Now our level is on the remote repo too! Check your repo on the GitHub website and it should be in there.
+				</p>
+				<h2>Using your GitHub Repo</h2>
+				<p>
+				Try to upload your changes frequently. You could do them in larger segments, but short bursts are better just because larger segments take forever to upload. Plus, if the Internet flickers for even a bit… there is a possibility for file corruption. Usually Git will try to avoid this by aborting the upload, and you can just restart the sync, but my advice would be to play it safe and just make commits frequently.
+				</p>
+				<p>
+				The other upside to making commits often is that it makes it easier to undo changes. Let’s say that you make a commit with ten new textures, but you only want to get rid of one. Well, you’re going to have to either undo that commit and add back the nine other textures or you’re going to have to delete that one texture and then make a new commit. We don’t want either because the former is tedious and the latter makes clutter in our repo if we do it too often.
+				</p>
+				<h2>Conclusion</h2>
+				<p>
+				And that’s it! If you want some takeaway points, they would be: 1) NEVER edit the same file that someone else is editing, or you will get a merge-conflict and that’s never fun, especially for Unreal Engine projects, 2) Make sure that everyone has Git LFS installed BEFORE they even clone the repo, otherwise, files won’t be synchronized properly, 3) Commit often, and 4) While not 100% necessary, branches are an excellent way to organize your project repo. Good luck!
+				</p>
+			</div>
+		</div>
+</body>
+
+</html>
