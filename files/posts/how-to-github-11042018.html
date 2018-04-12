@@ -148,7 +148,7 @@
 				</p>
 				<br/><img src="../images/github-repo-overview.png" width=100%><br/><br/>
 				<p>
-				You can name your repo whatever you want, just note that whenever you want to access it, you can find it at https://github.com/your-username/your-repo-name. Your repo visibility has to be toggled to ‘Public’ (‘Private’ is exclusively for GitHub Pro) and we are going to initialize it with a README.md file. Don’t worry too much about this now — in fact, using a README.md file is a topic for another day since we’d have to learn Markdown to use it effectively. Then select ‘Add .gitignore’ and select ‘UnrealEngine’.
+				You can name your repo whatever you want, just note that whenever you want to access it, you can find it at <a href="https://github.com/">https://github.com/your-username/your-repo-name</a>. Your repo visibility has to be toggled to ‘Public’ (‘Private’ is exclusively for GitHub Pro) and we are going to initialize it with a README.md file. Don’t worry too much about this now — in fact, using a README.md file is a topic for another day since we’d have to learn Markdown to use it effectively. Then select ‘Add .gitignore’ and select ‘UnrealEngine’.
 				</p>
 				<p>
 				TL;DR, a .gitignore file does exactly what it sounds like it would do: it tells Git to ignore files with the user-specified endings. But, we don’t actually need to know what these files are since we can just use the ‘UnrealEngine’ preset, which tells Git to ignore a lot of unnecessary files that don’t need to be uploaded to the remote repo every time you update your project. If you want to read more into it, please do, I actually have no idea what these files are or why we want to ignore them, but that explanation sounded reasonable enough to me, so I just rolled with it.
@@ -191,10 +191,14 @@
 				</p>
 				<h2>Setting up Git LFS</h2>
 				<p>
-				To do this, go to the ‘File’ tab in GitHub Desktop and select ‘Options’ then ‘Advanced’. In the ‘Advanced’ tab, where it says ‘Shell’, select ‘Git Bash’ from the dropdown menu then save. Now when you click on the ‘Repository’ tab at the top, you should see in the dropdown menu, an option that says ‘Open in Git Bash’. Select that. It should open up a window that looks like something out of the Matrix. Now you’re a hackerman!
+				To do this, go to the ‘File’ tab in GitHub Desktop and select ‘Options’ then ‘Advanced’. In the ‘Advanced’ tab, where it says ‘Shell’, select ‘Git Bash’ from the dropdown menu then save. Now when you click on the ‘Repository’ tab at the top, you should see in the dropdown menu, an option that says ‘Open in Git Bash’. Select that. It should open up a window that looks like something out of the Matrix. Now you’re a <a href="http://i0.kym-cdn.com/entries/icons/original/000/021/807/4d7.png">hackerman</a>!
 				</p>
 				<p>
-				Anyway, the reason why we’re here is because we have to initialize Git LFS. Type ‘git lfs install’ then hit enter (whenever I say to type a command in from now on, I mean to hit enter after). Then we’re going to type in ‘git lfs track “*.fbx”’, ‘git lfs track “*.umap”’, ‘git lfs track “*.uasset”’, ‘git lfs track “*.uproject”’. Make sure these are all spelled correctly! These are the Unreal assets that we want Git LFS to take care of rather than our regular repo. To double-check that you got all of them, you can type in ‘git lfs track’ and that should list every file type that Git LFS is tracking.
+				Anyway, the reason why we’re here is because we have to initialize Git LFS. Type ‘git lfs install’ then hit enter (whenever I say to type a command in from now on, I mean to hit enter after). Then we’re going to type in ‘git lfs track “*.fbx”’, ‘git lfs track “*.umap”’, ‘git lfs track “*.uasset”’, ‘git lfs track “*.uproject”’. Make sure these are all spelled correctly! These are the Unreal assets that we want Git LFS to take care of rather than our regular repo. To double-check that you got all of them, you can type in ‘git lfs track’ and that should list every file type that Git LFS is tracking. It should look something like this:
+				</p>
+				<br/><img src="../images/git-bash.png" width=100%><br/><br/>
+				<p>
+				You will need to do this every time you open a new local repo. You have to explicitly tell it to use Git LFS and to track the files that we want tracked.
 				</p>
 				<p>
 				Once those changes have been made, go back to GitHub Desktop. You should see some new changes showing up in the ‘Changes’ tab of your repo. Write the commit message to whatever you want, I would recommend saying ‘Modified .gitattributes’ (and if you want, you can write a description too, though that’s not necessary). Then, press ‘Commit to master’ then ‘Push to Origin’.
@@ -220,7 +224,7 @@
 
 				<h2>Create your Unreal Engine Project</h2>
 				<p>
-				Create your Unreal Engine project within your local repo. So for instance, my local repos are saved to C:\Users\Jason Jewik\Documents\GitHub\repo-name. Once your project has been made, open the ‘Source Control’ tab on the top panel next to ‘Save’. From the dropdown menu for ‘Provider’, choose ‘Git’. Unreal Engine should automatically populate the path to your git.exe file. If it doesn’t… your git path should be somewhere like C:\Program Files\Git\bin\git.exe. Accept settings, and now we’re hooked up to version control!
+				Create your Unreal Engine project within your local repo. [Note: if you have your local repo on the Q drive (the server), you need to move it onto the E drive before going any further. You can just move the folder from File Explorer, then you'll need to tell GitHub Desktop where you moved it to.] So for instance, my local repos are saved to C:\Users\Jason Jewik\Documents\GitHub\repo-name. Once your project has been made, open the ‘Source Control’ tab on the top panel next to ‘Save’. From the dropdown menu for ‘Provider’, choose ‘Git’. Unreal Engine should automatically populate the path to your git.exe file. If it doesn’t… your git path should be somewhere like C:\Program Files\Git\bin\git.exe (unless you installed Git to the E drive, in which case, it'll be somewhere else). Accept settings, and now we’re hooked up to version control!
 				</p>
 				<p>
 				Now go back to GitHub desktop, and you should note that there are changes! We want to add the .uproject file, so just the same as before with setting up Git LFS, we’ll want to write a commit message, commit the change, then push to origin. Note that the changes committed are only the ones with a checkbox beside them.
