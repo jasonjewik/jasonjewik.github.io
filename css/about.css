@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;*/
+	overflow: hidden;
 }
 
 #bar {
@@ -59,7 +60,7 @@ body p {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.4vw;
 	margin-bottom: 2vh;
-} 
+}
 
 .icon {
 	min-width: 3vw;
