@@ -9,16 +9,22 @@ function resize() {
 
      var landingText = document.getElementById('landing-text');
      var aboutText = document.getElementsByClassName('about-text');
+     var projectsHeading = document.getElementById('projects-heading');
+     var projectsSubHeading = document.getElementById('projects-subheading');
 
      if (width > height) // screen is landscape oriented
      {
           landingText.style.fontSize = "5vw";
-          aboutText[0].style.fontSize = "vw";
-          aboutText[1].style.fontSize = "vw";
+          aboutText[0].style.fontSize = "2.5vw";
+          aboutText[1].style.fontSize = "2.5vw";
+          projectsHeading.style.fontSize = "4vw";
+          projectsSubHeading.style.fontSize = "2vw";
      } else // screen is portrait oriented
      {
-          landingText.style.fontSize = "6vh";
-          aboutText[0].style.fontSize = "vh";
-          aboutText[1].style.fontSize = "vh";
+          landingText.style.fontSize = "8vh";
+          aboutText[0].style.fontSize = "4vh";
+          aboutText[1].style.fontSize = "4vh";
+          projectsHeading.style.fontSize = "5vh";
+          projectsSubHeading.style.fontSize = "3vh";
      }
 }
