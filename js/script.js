@@ -1,3 +1,8 @@
+function load() {
+     M.AutoInit();
+     resize();
+}
+
 function resize() {
      var width = screen.width;
      var height = screen.height;
