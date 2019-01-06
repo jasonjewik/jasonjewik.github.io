@@ -12,9 +12,9 @@ main {
      height: 100vh;
 }
 
-#landing img {
-     width: 25vw;
-     height: 25vw;
+.pfp {
+     max-width: 25vw;
+     max-height: auto;
 }
 
 #landing h1 {
@@ -38,8 +38,8 @@ main {
 }
 
 .fade-in-top {
-	-webkit-animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
+	        animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
 }
 
 .fade-in-left {

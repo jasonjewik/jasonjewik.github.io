@@ -19,24 +19,30 @@
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600|Ubuntu:500,700" rel="stylesheet">
 </head>
 
-<body>
+<body onload="resize()" onresize="resize()">
 	<main>
 		<section id="landing" class="container valign-wrapper">
 			<div class="row">
 				<div class="row">
-					<h1 class="center-align fade-in-top">Hello, I'm Jason;<br/>welcome to my website.</h1>
+					<h1 id="landing-text" class="center-align fade-in-top">Hello, I'm Jason;<br/>welcome to my website.</h1>
 				</div>
-				<div class="divider"></div>
-				<div class="row valign-wrapper" style="height: 25vw">
+				<div class="divider hide-on-small-only"></div>
+				<!-- Tablet and up code -->
+				<div class="row valign-wrapper hide-on-small-only">
 					<div class="col s6 fade-in-left">
-						<h4 class="right-align"><a href="https://www.linkedin.com/in/jason-jewik-7568b3142/">LinkedIn</a> • <a href="https://github.com/jj11d7t">GitHub</a> • <a href="resume.pdf">Resume</a><br/>jason.jewik@gmail.com</h3>
+						<h4 class="right-align about-text"><a href="https://www.linkedin.com/in/jason-jewik-7568b3142/">LinkedIn</a> • <a href="https://github.com/jj11d7t">GitHub</a> • <a href="resume.pdf">Resume</a><br/>jason.jewik@gmail.com</h4>
 					</div>
 					<div class="col s6 fade-in">
-						<img src="images/Website_PFP.png"/>
+						<img class="pfp" src="images/Website_PFP.png"/>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!-- Smaller than tablet code -->
+		<div class="row hide-on-med-and-up">
+			<h4 class="center-align about-text"><a href="https://www.linkedin.com/in/jason-jewik-7568b3142/">LinkedIn</a> • <a href="https://github.com/jj11d7t">GitHub</a><br/><a href="resume.pdf">Resume</a> • <a href="mailto:jason.jewik@gmail.com">Email</a></h4>
+		</div>
 
 		<div class="container divider"></div>
 
@@ -46,13 +52,13 @@
 				<h4 class="center-align">(including projects that both did and didn't pan out)</h4>
 			</div>
 			<div class="row">
-				<div class="col s4">
+				<div class="col l4 s12">
 					<div class="card hoverable">
 						<div class="card-image">
 							<img src="images/VideoGamesCard.png"/>
 						</div>
 						<div class="card-content">
-							<span class="card-title">Video Games</span>
+							<span class="card-title truncate">Video Games</span>
 							<p>I like playing video games, so I've tried making some too.</p>
 						</div>
 						<div class="card-action">
@@ -60,28 +66,28 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s4">
+				<div class="col l4 s12">
 					<div class="card hoverable">
 						<div class="card-image activator">
 							<img src="images/NNCard.png"/>
 						</div>
 						<div class="card-content">
-							<span class="card-title activator">Artificial Intelligence<i class="material-icons right">more_vert</i></span>
+							<span class="card-title activator truncate">Machine Learning<i class="material-icons right hide-on-small-only">more_vert</i></span>
 							<p>I dabble in stuff with neural networks.</p>
 						</div>
 						<div class="card-reveal">
-							<span class="card-title">Artificial Intelligence<i class="material-icons right">close</i></span>
+							<span class="card-title truncate">Machine Learning<i class="material-icons right">close</i></span>
 							<p>The image shown there was from the <a href="https://en.wikipedia.org/wiki/MNIST_database">Modified National Institute of Standards and Technology (MNIST) database</a>, a collection of thousands of handwritten digits. As part of a class I'm taking this year, I wrote a neural network that can accurately identify around 93% of those images.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col s4">
+				<div class="col l4 s12">
 					<div class="card hoverable">
 						<div class="card-image">
 							<img src="images/PodcastCard.png"/>
 						</div>
 						<div class="card-content">
-							<span class="card-title">Deterrimus Cum Laude</span>
+							<span class="card-title truncate">Deterrimus Cum Laude</span>
 							<p>Listen to me make stupid jokes with a friend in brief 30 minute podcasts.</p>
 						</div>
 						<div class="card-action">
@@ -91,13 +97,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s6">
-					<div class="card sticky-action hoverable">
+				<div class="col l6 s12">
+					<div class="card hoverable">
 						<div class="card-image">
 							<img src="images/WHSSGCard.png"/>
 						</div>
 						<div class="card-content">
-							<span class="card-title">WHS Study Guide</span>
+							<span class="card-title truncate">WHS Study Guide</span>
 							<p>An educational YouTube series some friends and I tried to start back in 2016. I wrote scripts, hosted the biology series, animated the intro segment, and edited videos.</p>
 						</div>
 						<div class="card-action">
@@ -105,15 +111,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s6">
-					<div class="card horizontal hoverable">
-						<div class="card-image">
+				<div class="col l6 s12">
+					<div class="card horizontal hoverable hide-on-small-only">
+						<div class="card-image valign-wrapper activator">
 							<img src="images/TEDxCard.jpg"/>
 						</div>
 						<div class="card-stacked">
 							<div class="card-content">
-								<span class="card-title">TEDxWhitneyHigh</span>
-								<p>I spoke at my school's TEDx conference two years in a row about artificial intelligence and video games in education, respectively. And yeah, I look pretty derpy in this photo.</p>
+								<span class="card-title activator truncate">TEDx<i class="material-icons right hide-on-small-only">more_vert</i></span>
+								<p>I spoke at my school's TEDx conference twice: once about artificial intelligence and once video games in education.</p>
 							</div>
 							<div class="card-action">
 								<a href="https://www.youtube.com/watch?v=eFn5AaPnLm4">Hello World: Coming Out of the Socket (2016)</a>
@@ -121,18 +127,36 @@
 								<a href="https://www.youtube.com/watch?v=vJ62vVhuQVw">Education: Game Edition (2017)</a>
 							</div>
 						</div>
+						<div class="card-reveal">
+							<span class="card-title truncate">TEDx<i class="material-icons right">close</i></span>
+							<p>The first year I gave a talk was in 2016; I wanted to stir discussion about what implications a "super AI" would have on society. (Robot rights and that sort of stuff.) My second talk was in 2017. I was advocating for increased usage of digital technologies, and particularly video games, in improving the modern education system. And yeah, I look pretty derpy in this photo.</p>
+						</div>
+					</div>
+					<div class="card hoverable hide-on-med-and-up">
+						<div class="card-image">
+							<img src="images/TEDxCard.jpg"/>
+						</div>
+						<div class="card-content">
+							<span class="card-title truncate">TEDx</span>
+							<p>I spoke at my school's TEDx conference two years in a row about artificial intelligence and video games in education, respectively. And yeah, I look pretty derpy in this photo.</p>
+						</div>
+						<div class="card-action">
+							<a href="https://www.youtube.com/watch?v=eFn5AaPnLm4">Hello World: Coming Out of the Socket (2016)</a>
+							<br/><br/>
+							<a href="https://www.youtube.com/watch?v=vJ62vVhuQVw">Education: Game Edition (2017)</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col s6">
-					<div class="card horizontal hoverable">
-						<div class="card-image">
+				<div class="col l6 s12">
+					<div class="card horizontal hoverable hide-on-small-only">
+						<div class="card-image valign-wrapper">
 							<img src="images/WHSRoboticsCard.png"/>
 						</div>
 						<div class="card-stacked">
 							<div class="card-content">
-								<span class="card-title">WHS Robotics</span>
+								<span class="card-title truncate">WHS Robotics</span>
 								<p>Currently, I am serving as the president of Whitney High School's robotics club and a programmer for FTC Team 542.</p>
 							</div>
 							<div class="card-action">
@@ -140,14 +164,35 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col s6">
-					<div class="card horizontal hoverable">
+					<div class="card hoverable hide-on-med-and-up">
 						<div class="card-image">
-							<img src="images/WhitneyCodeJam.png"/>
+							<img src="images/WHSRoboticsCard.png"/>
 						</div>
 						<div class="card-content">
-							<span class="card-title">Whitney Code Jam</span>
+							<span class="card-title truncate">WHS Robotics</span>
+							<p>Currently, I am serving as the president of Whitney High School's robotics club and a programmer for FTC Team 542.</p>
+						</div>
+						<div class="card-action">
+							<a href="https://www.whitneyrobotics.org/">WHS Robotics' Webpage</a>
+						</div>
+					</div>
+				</div>
+				<div class="col l6 s12">
+					<div class="card horizontal hoverable hide-on-small-only">
+						<div class="card-image valign-wrapper">
+							<img src="images/WhitneyCodeJamCard.png"/>
+						</div>
+						<div class="card-content">
+							<span class="card-title truncate">Whitney Code Jam</span>
+							<p>A little hackathon project I'm planning with some friends. More details coming soon!</p>
+						</div>
+					</div>
+					<div class="card hoverable hide-on-med-and-up">
+						<div class="card-image">
+							<img src="images/WhitneyCodeJamCard.png"/>
+						</div>
+						<div class="card-content">
+							<span class="card-title truncate">Whitney Code Jam</span>
 							<p>A little hackathon project I'm planning with some friends. More details coming soon!</p>
 						</div>
 					</div>
@@ -162,7 +207,8 @@
 		</div>
 	</footer>
 
-	<!--JavaScript at end of body for optimized loading-->
+	<!--Import Javascript at end for optimized load times-->
+	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
