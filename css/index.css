@@ -48,6 +48,15 @@ main {
      margin-top: 0px;
 }
 
+#photos {
+     margin-bottom: 5%
+}
+
+#photos h1 {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: 500;
+}
+
 .fade-in-top {
 	-webkit-animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
 	        animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
