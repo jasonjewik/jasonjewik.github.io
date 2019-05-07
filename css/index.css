@@ -57,6 +57,13 @@ main {
      font-weight: 500;
 }
 
+/* centers the imgur embed */
+iframe {
+     display: block;
+     margin-left: auto;
+     margin-right: auto
+}
+
 .fade-in-top {
 	-webkit-animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
 	        animation: fade-in-top 0.75s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.1s both;
