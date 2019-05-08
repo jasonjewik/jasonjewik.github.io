@@ -11,7 +11,7 @@ function resize() {
      var aboutText = document.getElementsByClassName('about-text');
      var projectsHeading = document.getElementById('projects-heading');
      var projectsSubHeading = document.getElementById('projects-subheading');
-     var photoHeading = document.getElementsByClassName('photos-heading');
+     var photoHeading = document.getElementsById('photos-heading');
 
      if (width > height) // screen is landscape oriented
      {
