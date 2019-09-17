@@ -39,29 +39,6 @@ main {
 #projects h1 {
      font-family: 'Ubuntu', sans-serif;
      font-weight: 500;
-     margin-bottom: 0px;
-}
-
-#projects h4 {
-     font-family: 'Ubuntu', sans-serif;
-     font-weight: 500;
-     margin-top: 0px;
-}
-
-#photos {
-     margin-bottom: 5%
-}
-
-#photos h1 {
-     font-family: 'Ubuntu', sans-serif;
-     font-weight: 500;
-}
-
-/* centers the imgur embed */
-iframe {
-     display: block !important;
-     margin-left: auto !important;
-     margin-right: auto !important
 }
 
 .fade-in-top {
