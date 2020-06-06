@@ -1,232 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="description" content="Jason Jewik's personal website">
-	<meta name="author" content="Jason Jewik">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Jason Jewik's personal website" />
+    <meta name="author" content="Jason Jewik" />
 
-	<!--Set the website title & icon-->
-	<title>Jason Jewik</title>
-	<link rel="shortcut icon" type="image/png" href="icon.png"/>
+    <title>Jason Jewik</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: darkgray;
+      }
+    </style>
+  </head>
 
-	<!--Import index.css-->
-	<link type="text/css" rel="stylesheet" href="css/index.css"/>
-
-	<!--Import fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600|Ubuntu:500,700" rel="stylesheet">
-</head>
-
-<body onload="load()" onresize="resize()">
-	<main>
-		<section id="landing" class="container valign-wrapper">
-			<div class="row">
-				<div class="row">
-					<h1 id="landing-text" class="center-align fade-in-top">Hello, I'm Jason;<br/>welcome to my website.</h1>
-				</div>
-				<div class="divider hide-on-small-only"></div>
-				<!-- Tablet and up code -->
-				<div class="row valign-wrapper hide-on-small-only">
-					<div class="col s6 fade-in-left">
-						<h4 class="right-align about-text"><a href="https://www.linkedin.com/in/jasonjewik/">LinkedIn</a> • <a href="https://github.com/jasonjewik">GitHub</a> • <a href="resume.pdf">Resume</a><br/>jason.jewik@gmail.com</h4>
-					</div>
-					<div class="col s6 fade-in">
-						<img id="pfp" src="images/Website_PFP.png"/>
-					</div>
-				</div>
-				<!-- Smaller than tablet code -->
-				<div class="row hide-on-med-and-up">
-					<img id="pfp-mobile" class="fade-in" src="images/Website_PFP.png"/>
-				</div>
-			</div>
-		</section>
-
-		<!-- Smaller than tablet code -->
-		<div class="container divider hide-on-med-and-up"></div>
-		<div class="row hide-on-med-and-up" style="margin: 0px">
-			<h4 class="center-align about-text"><a href="https://www.linkedin.com/in/jasonjewik/">LinkedIn</a> • <a href="https://github.com/jasonjewik">GitHub</a><br/><a href="resume.pdf">Resume</a> • <a href="mailto:jason.jewik@gmail.com">Email</a></h4>
-		</div>
-
-		<div class="container divider"></div>
-
-		<section id="projects" class="container">
-			<div class="row">
-				<h1 id="projects-heading" class="center-align">Stuff I've worked on</h1>
-			</div>
-			<div class="row">
-				<div class="col l4 m6 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="images/VideoGamesCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">Video Games</span>
-							<p>I like playing video games, so I've tried making some too.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://redqafine.itch.io">My itch.io Page</a>
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m6 s12">
-					<div class="card hoverable">
-						<div class="card-image activator">
-							<img src="images/NNCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title activator truncate">Machine Learning<i class="material-icons right hide-on-small-only">more_vert</i></span>
-							<p>I dabble in stuff with neural networks.</p>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title truncate">Machine Learning<i class="material-icons right">close</i></span>
-							<p>The image shown there was from the <a href="https://en.wikipedia.org/wiki/MNIST_database">Modified National Institute of Standards and Technology (MNIST) database</a>, a collection of thousands of handwritten digits. As part of a class I took in my senior year of high school, I wrote various  neural networks to identify those images. The last project I made was <a href="https://www.youtube.com/watch?v=_na6TP5X7vY">PenguinFlow</a>, an AI trained to play <a href="redqafine.itch.io/penguin-run">Penguin Run.</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col l4 m6 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="images/PodcastCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">Deterrimus Cum Laude</span>
-							<p>Listen to me make stupid jokes with a friend in 15 to 30 minute podcasts.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://www.youtube.com/channel/UCiW9i7zNb-icMguqZ_yTWFA">Our YouTube Channel</a>
-							<br>
-							<a href="https://open.spotify.com/show/6Y5fTIjL8GRWfaEg8bV4bY">Our Spotify Show</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l6 m6 s12">
-					<div class="card hoverable">
-						<div class="card-image">
-							<img src="images/WHSSGCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">WHS Study Guide</span>
-							<p>An educational YouTube series some friends and I tried to start back in 2016. I wrote scripts, hosted the biology series, animated the intro segment, and edited videos.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://www.youtube.com/channel/UCSIonEY9hN9sigA60d2GQog">Our YouTube Channel</a>
-						</div>
-					</div>
-				</div>
-				<div class="col l6 m6 s12">
-					<div class="card horizontal hoverable hide-on-small-only">
-						<div class="card-image valign-wrapper activator">
-							<img src="images/TEDxCard.jpg"/>
-						</div>
-						<div class="card-stacked">
-							<div class="card-content">
-								<span class="card-title activator truncate">TEDx<i class="material-icons right hide-on-small-only">more_vert</i></span>
-								<p>I spoke at my high school's TEDx conference twice: once about artificial intelligence and once video games in education.</p>
-							</div>
-							<div class="card-action">
-								<a href="https://www.youtube.com/watch?v=eFn5AaPnLm4">Hello World: Coming Out of the Socket (2016)</a>
-								<br/><br/>
-								<a href="https://www.youtube.com/watch?v=vJ62vVhuQVw">Education: Game Edition (2017)</a>
-							</div>
-						</div>
-						<div class="card-reveal">
-							<span class="card-title truncate">TEDx<i class="material-icons right">close</i></span>
-							<p>The first year I gave a talk was in 2016; I wanted to stir discussion about what implications a "super AI" would have on society. (Robot rights and that sort of stuff.) My second talk was in 2017. I was advocating for increased usage of digital technologies, and particularly video games, in improving the modern education system. And yeah, I look pretty derpy in this photo.</p>
-						</div>
-					</div>
-					<div class="card hoverable hide-on-med-and-up">
-						<div class="card-image">
-							<img src="images/TEDxCard.jpg"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">TEDx</span>
-							<p>I spoke at my school's TEDx conference two years in a row about artificial intelligence and video games in education, respectively. And yeah, I look pretty derpy in this photo.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://www.youtube.com/watch?v=eFn5AaPnLm4">Hello World: Coming Out of the Socket (2016)</a>
-							<br/><br/>
-							<a href="https://www.youtube.com/watch?v=vJ62vVhuQVw">Education: Game Edition (2017)</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l6 m6 s12">
-					<div class="card horizontal hoverable hide-on-small-only">
-						<div class="card-image valign-wrapper">
-							<img src="images/WHSRoboticsCard.png"/>
-						</div>
-						<div class="card-stacked">
-							<div class="card-content">
-								<span class="card-title truncate">WHS Robotics</span>
-								<p>During the 2018-19 school year, I served as the president of Whitney High School's robotics club and a programmer for FTC Team 542.</p>
-							</div>
-							<div class="card-action">
-								<a href="https://www.whitneyrobotics.org/">WHS Robotics' Webpage</a>
-							</div>
-						</div>
-					</div>
-					<div class="card hoverable hide-on-med-and-up">
-						<div class="card-image">
-							<img src="images/WHSRoboticsCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">WHS Robotics</span>
-							<p>During the 2018-19 school year, I served as the president of Whitney High School's robotics club and a programmer for FTC Team 542.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://www.whitneyrobotics.org/">WHS Robotics' Webpage</a>
-						</div>
-					</div>
-				</div>
-				<div class="col l6 m6 s12">
-					<div class="card horizontal hoverable hide-on-small-only">
-						<div class="card-image valign-wrapper">
-							<img src="images/WhitneyCodeJamCard.png"/>
-						</div>
-						<div class="card-stacked">
-							<div class="card-content">
-								<span class="card-title truncate">Whitney Code Jam</span>
-								<p>In February 2019, I hosted my high school's first hackathon. Check out the Facebook page for more info!</p>
-							</div>
-							<div class="card-action">
-								<a href="https://www.facebook.com/WhitneyCodeJam">Facebook</a>
-							</div>
-						</div>
-					</div>
-					<div class="card hoverable hide-on-med-and-up">
-						<div class="card-image">
-							<img src="images/WhitneyCodeJamCard.png"/>
-						</div>
-						<div class="card-content">
-							<span class="card-title truncate">Whitney Code Jam</span>
-							<p>In February 2019, I hosted my high school's first hackathon.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://www.facebook.com/WhitneyCodeJam">Facebook</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="page-footer valign-wrapper blue darken-4">
-		<div class="container">
-			<p class="flow-text center-align">Made with GitHub Pages. Click <a href="https://github.com/jasonjewik/jasonjewik.github.io">here</a> for sauce code.</p>
-		</div>
-	</footer>
-
-	<!--Import Javascript at end for optimized load times-->
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  <body>
+    <div>
+      <h1>
+        Under Construction! 👷‍♂️ Please check back later.
+      </h1>
+      <h2>
+        Thank you for visiting :)
+      </h2>
+    </div>
+  </body>
 </html>
