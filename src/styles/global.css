@@ -8,8 +8,3 @@
   transition: all 0.6s ease;
   background-color: #fefefe;
 }
-
-.dark a,
-.dark a:visited {
-  color: #fff;
-}
