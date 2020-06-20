@@ -6,6 +6,7 @@
  */
 
 import React from 'react'
+import Emoji from 'a11y-react-emoji'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -42,7 +43,7 @@ const Layout = ({ children }) => {
               {` `}
               <a href="https://www.gatsbyjs.org">Gatsby</a>
               {` `}
-              and made with ❤.
+              and made with <Emoji symbol="💕" label="love" />.
             </footer>
           </div>
         </div>
