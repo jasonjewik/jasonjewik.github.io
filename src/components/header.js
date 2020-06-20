@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import ThemeContext from '../context/theme-context'
 import styled from '@emotion/styled'
@@ -15,7 +14,7 @@ const DarkModeToggler = styled.button(({ color }) => ({
   top: '10px',
 }))
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <ThemeContext.Consumer>
     {theme => (
       <header>
@@ -39,9 +38,5 @@ const Header = ({ siteTitle }) => (
     )}
   </ThemeContext.Consumer>
 )
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
