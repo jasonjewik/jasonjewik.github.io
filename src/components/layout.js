@@ -26,29 +26,25 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ThemeContext.Consumer>
-      {theme => (
-        <div className={theme.dark ? 'dark' : 'light'}>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div
-            style={{
-              margin: `0 auto`,
-              maxWidth: 960,
-              padding: `0 1.0875rem 1.45rem`,
-            }}
-          >
-            <main>{children}</main>
-            <footer>
-              © {new Date().getFullYear()} Jason Jewik. Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-              {` `}
-              and made with <Emoji symbol="💕" label="love" />.
-            </footer>
-          </div>
-        </div>
-      )}
-    </ThemeContext.Consumer>
+    <>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()} Jason Jewik. Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {` `}
+          and made with <Emoji symbol="💕" label="love" />.
+        </footer>
+      </div>
+    </>
   )
 }
 
