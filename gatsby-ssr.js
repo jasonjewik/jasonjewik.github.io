@@ -1,7 +1,25 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
+import './src/styles/global.css'
 
-// You can delete this file if you're not using it
+import ThemeContext, { ThemeProvider } from './src/context/theme-context'
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>
+    <ThemeContext.Consumer>
+      {theme => (
+        <div
+          className={theme.dark ? 'dark' : 'light'}
+          style={{
+            width: '100vw',
+            minHeight: '100vh',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+          }}
+        >
+          {element}
+        </div>
+      )}
+    </ThemeContext.Consumer>
+  </ThemeProvider>
+)
