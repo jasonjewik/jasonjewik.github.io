@@ -5,13 +5,13 @@ import Emoji from 'a11y-react-emoji'
 
 const DarkModeToggler = styled.button(({ color }) => ({
   color: color,
-  marginTop: '5px',
   background: 'transparent',
   border: 'none',
   cursor: 'pointer',
   position: 'absolute',
-  right: '15px',
-  top: '10px',
+  right: '16px',
+  top: '16px',
+  fontSize: '0.75em',
 }))
 
 const Header = () => (

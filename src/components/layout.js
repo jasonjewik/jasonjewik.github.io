@@ -4,10 +4,12 @@ import styled from '@emotion/styled'
 
 import Header from './header'
 import Footer from './footer'
+import Navbar from './navbar'
 
 const ContentWrapper = styled.div({
   margin: 'auto',
-  width: '50%',
+  marginTop: '7vh',
+  width: '60%',
 })
 
 const Layout = ({ children }) => {
@@ -15,6 +17,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <ContentWrapper>
+        <Navbar />
         {children}
         <Footer />
       </ContentWrapper>

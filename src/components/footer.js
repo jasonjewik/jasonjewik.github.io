@@ -5,7 +5,9 @@ import Emoji from 'a11y-react-emoji'
 const StyledFooterText = styled.footer({
   minWidth: '80%',
   textAlign: 'center',
-  margin: '2rem auto 2rem auto',
+  margin: 'auto',
+  marginTop: '2rem',
+  marginBottom: '1rem',
 })
 
 const Footer = () => (
