@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 
 const spacing = {
   marginLeft: '0.5em',
-  fontSize: '0.75em',
+  fontSize: '0.8em',
 }
 
 const NavItem = ({ children }) => {

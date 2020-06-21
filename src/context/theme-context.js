@@ -19,7 +19,7 @@ class ThemeProvider extends React.Component {
 
   componentDidMount() {
     const currentHour = new Date().getHours()
-    const isNight = currentHour < 7 || currentHour > 19
+    const isNight = currentHour < 7 || currentHour >= 19
     this.setState({ dark: isNight })
   }
 
