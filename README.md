@@ -1,2 +1,3 @@
-# jasonjewik.com
-My personal website.
+# Jason Jewik's Personal Website
+
+This site is built with GatsbyJS.
