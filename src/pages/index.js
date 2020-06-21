@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Emoji from 'a11y-react-emoji'
 
@@ -54,7 +53,7 @@ const StyledPrefooter = styled.div({
 })
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <h1>
       <AnimatedHandWave /> <span>Hello there!</span>
@@ -77,7 +76,7 @@ const IndexPage = () => (
       </a>
       .
     </StyledPrefooter>
-  </Layout>
+  </>
 )
 
 export default IndexPage

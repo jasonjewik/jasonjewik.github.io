@@ -3,7 +3,7 @@ import fairyGatesTheme from 'typography-theme-fairy-gates'
 fairyGatesTheme.overrideThemeStyles = () => ({
   html: {
     fontSize: '2.75vmin',
-    overflow: 'auto',
+    overflowX: 'hidden',
   },
   h1: {
     color: 'inherit',
