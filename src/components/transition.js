@@ -8,17 +8,14 @@ const getTransitionStyles = {
   entering: {
     position: 'absolute',
     opacity: 0,
-    transform: 'scale(1.1)',
   },
   entered: {
     opacity: 1,
-    transform: 'scale(1)',
-    transition: `opacity ${timeout}ms, transform ${timeout}ms`,
+    transition: `opacity ${timeout}ms`,
   },
   exiting: {
     opacity: 0,
-    transform: 'scale(0.9)',
-    transition: `opacity ${timeout}ms, transform ${timeout}ms`,
+    transition: `opacity ${timeout}ms`,
   },
 }
 class Transition extends React.Component {
