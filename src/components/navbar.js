@@ -17,8 +17,9 @@ const Separator = () => {
 
 const Navbar = () => {
   const BarDiv = styled.div({
-    width: '100%',
+    width: '60%',
     margin: 'auto',
+    marginTop: '7vh',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-end',

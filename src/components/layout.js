@@ -8,7 +8,6 @@ import Navbar from './navbar'
 
 const ContentWrapper = styled.div({
   margin: 'auto',
-  marginTop: '7vh',
   width: '60%',
 })
 
@@ -16,8 +15,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      <Navbar />
       <ContentWrapper>
-        <Navbar />
         {children}
         <Footer />
       </ContentWrapper>
