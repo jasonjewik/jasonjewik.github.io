@@ -8,19 +8,19 @@ const defaultState = {
 const ThemeContext = React.createContext(defaultState)
 
 class ThemeProvider extends React.Component {
-  state = {
-    dark: false,
+  constructor(props) {
+    super(props)
+
+    const currentHour = new Date().getHours()
+    const isNight = currentHour < 7 || currentHour >= 19
+    this.state = {
+      dark: isNight,
+    }
   }
 
   toggleDark = () => {
     let dark = !this.state.dark
     this.setState({ dark })
-  }
-
-  componentDidMount() {
-    const currentHour = new Date().getHours()
-    const isNight = currentHour < 7 || currentHour >= 19
-    this.setState({ dark: isNight })
   }
 
   render() {

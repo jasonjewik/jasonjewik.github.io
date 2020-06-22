@@ -1,3 +1,6 @@
+dev:
+	npm run develop
+
 build:
 	npm run build
 	copy CNAME public
