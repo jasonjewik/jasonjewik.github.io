@@ -1,6 +1,63 @@
 ---
 title: Remaking my Website with GatsbyJS
-date: 21 June 2020
+date: 10 August 2020
 ---
 
-Blog post coming soon! I've been working on my new website for almost a week (week and a half?) straight, and I need some time to rest and gather what I want to write and reflect upon.
+In Spring Quarter 2020, I took CS 97 at UCLA. It was an experimental course that tried addressing some pain points students had with CS 35L, a requisite class on software engineering. One key difference between 97 and 35L was the addition of a half-quarter-long team project to create a web or mobile app. My team used React Native to create a mobile app called "Workout Party". Before starting the project, I knew some JavaScript from my backend engineering experience with UCLA DevX, but I had absolutely no experience with React. I had heard of the term being tossed around before, typically in the context of "modern web and app development", but I never looked into it. Nonetheless, my team (mostly my PM tbh) pulled through and we finished our app by the submission deadline.
+
+Armed with my 4-week whirlwind tour of React, I decided I wanted to remake my website with React. Note that the project my team and I made was with React Native, so I still had the matter of figuring out how to create a website. Prior to this, I was actually planning to re-create my website with Jekyll, but never finished. And to be honest, I didn't know Ruby, so I would've needed to learn that first.
+
+But now I knew React.
+
+So I turned to the other static site generator, GatsbyJS. As a React framework, Gatsby was a perfect way to use and improve the skills I learned in CS 97.
+
+To summarize this mess though, the process of rebuilding my website looked something like:
+
+1. Following the Gatsby tutorial
+2. Building my home page
+3. Realizing that I want to be cool and include a dark theme toggler
+4. Figuring out how to do that with React Context
+5. Realizing React Context probably isn't the right way to do it
+6. Ugh, fine I'll come back to it later
+7. Let's add other pages
+8. Wait I want slick transitions between the pages
+9. OOOOOOH right, Gatsby has _plugins_
+10. Is there a plugin for doing transitions?
+11. Yep, there is and [it seems pretty neat](https://transitionlink.tylerbarnes.ca/docs/anilink/)
+12. Hm, it doesn't seem to do what I want
+13. Let's try doing it myself
+14. OK I did it myself and nothing's really working well together and this sucks, although that hand wave animation is pretty cool 😎
+15. Let's.... just try this over again: `git checkout -b gatsby-redo`
+16. Oh neat so there are some plugins and tutorials that'll work
+17. That theming tutorial was nice
+18. Guess I'll have to do transitions myself after all, but I should do it intelligently this time. I really need to rethink where all my code and figure out what should be a component of what
+19. Yay things are pulling together
+20. I can probably push this. Push? Push.
+21. Oh DUH wait I pushed the Gatsby code to `master` instead of the statically generated website
+22. Wait how do I do that? _opens Gatsby tutorial again_
+23. Cool, I think it's working now
+24. Oops, forgot about my custom domain... how do I get that working again? I haven't needed to touch this thing in years
+25. Oh great, there's a GitHub Pages tutorial on this
+26. GOOD ENOUGH. Push the production build to master and it's time to move on, Summer Session A is starting
+
+You can also check out the branches `gatsby` and `gatsby-redo` on this [website's GitHub repository to see my workflow](https://github.com/jasonjewik/jasonjewik.github.io).
+
+Aaaaaaand that's more or less how it went. I wrote that all from memory about 2 weeks after I last touched any code (1 July), so it might not be completely accurate but re-reading it almost a month and a half later (10 August), there's still some valuable takeaways here:
+
+1. Make sure you know what you're getting into when starting a project
+   - Sketch it out first
+   - What plugins or tools are available so you don't have to re-invent the wheel
+2. Think about what needs to be a component of what first (kinda ties into the "sketch it out first" point)
+   - It took a while for me to think in terms of composition instead of inheritance
+3. Think about how components are going to interact with each other, then design them based on that
+   - In my case, part of the reason why I had to a soft restart half-way through the redesign is because I did not set up my component tree in a way that was friendly to incorporating page transitions
+
+And why did I do this? For fun. And also because React's sort of an important skill to know.
+
+What's next for my website?
+
+- Finish the project page
+- Make it mobile-friendly
+- Figure out what is appropriate to post on my blog
+  - Figure out what tone I want to use for my blog
+  - Although I'll probably leave this post up since it'll be probably be a useful way for me to remember how I did this
