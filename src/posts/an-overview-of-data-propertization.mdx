@@ -1,0 +1,190 @@
+---
+title: An Overview of Data Propertization
+date: 10 August 2020
+index: 1
+---
+
+import { IndentedBlock, WorksCited } from '../components/custom-indent'
+
+**Foreword**<br/>In Summer 2020, I took a class called "Internet and Society". For my final paper, I explored data propertization because I thought it was an interesting yet poorly understood topic. This is a reprint of that paper.
+
+<a name="abstract"></a>
+
+## 1. [Abstract](#abstract)
+
+Data propertization, or the idea that property rights should be defined for data, was recently thrust into the United States' national discourse by 2020 Democratic candidate Andrew Yang. However, Yang is far from the first person to call for propertization; in 1967, American legal scholar Alan Westin argued that property rights for data would protect privacy rights for the individual. This paper presents a brief survey of scholarly literature, delineating arguments for and models of data propertization in Section 4, followed by arguments against and alternatives to data propertization in Section 5. Section 6 examines the extent to which the General Data Protection Regulation and the California Consumer Privacy Act fit propertization models. Section 7 explains recommendations for future work, and Section 8 concludes with the author's position on the matter.
+
+<a name="definitions"></a>
+
+## 2. [Definitions](#definitions)
+
+### 2.1. Data
+
+In 2016, the European Union (EU) passed the General Data Protection Regulation (GDPR), and two years later, the State of California passed the California Consumer Privacy Act (CCPA). These are landmark pieces of legislation that will be examined in more detail later, but for now, it is important to understand how they define "data". Article 4 of GDPR states:
+
+<IndentedBlock>
+  ‘Personal data' means any information relating to an identified or
+  identifiable natural person (‘data subject'); an identifiable natural person
+  is one who can be identified, directly, or indirectly, in particular by
+  reference to an identifier such as a name, an identification number, location
+  data, an online identifier or to one or more factors specific to the physical,
+  physiological, genetic, mental, economic, cultural or social identity of that
+  natural person (Regulation 2016/679).
+</IndentedBlock>
+
+CCPA uses the term "personal information" instead of "data", but the two terms are conceptually the same. Section 1798.140 states:
+
+<IndentedBlock>
+  "Personal information" means information that identifies, relates to,
+  describes, is reasonably capable of being associated with, or could reasonably
+  be linked, directly or indirectly, with a particular consumer or household…
+  "Personal information" does not include publicly available information… [which
+  is] lawfully made available from federal, state, or local government records…
+  "Personal information" does not include consumer information that is
+  deidentified or aggregate consumer information. (Title 1.81.5)
+</IndentedBlock>
+
+Each of the works surveyed in this article also has its own definition for "data", but for the sake of cohesion, this paper will attempt a definition that is simple but consistent with both the European and Californian model. **Data is information that is related to and can be used to identify an individual; "data", "personal data", and "personal information" will be used interchangeably.**
+
+### 2.2. Data Subject
+
+A data subject is an individual who provides and can be identified by his or her data.
+
+### 2.3. Data Collector
+
+A data collector is an entity that collects personal information from data subjects. Note that not all sources reviewed use the terms "data subject" or "data collector". However, where appropriate, these terms will be used to describe the ideas of different scholars for ease of relation and comparison.
+
+### 2.4. Property
+
+In his 2004 paper, "Property, Privacy, and Personal Data", American law professor Paul Schwartz defines property as "any interest in an object, whether tangible or intangible, that is enforceable against the world" (Schwartz 2058). Other scholars define property differently, and even Schwartz provides an addendum to this definition within the same article. Nonetheless, his original framing is a good place to start for thinking about property in a more general sense, as opposed to simply physical assets.
+
+### 2.5. Data Propertization
+
+There exist several proposed models for what propertized data should look like, but broadly speaking, **"data propertization" is the idea that a system of legal rights similar to property rights should be used to regulate the usage and transfer of personal data.**
+
+<a name="background"></a>
+
+## 3. [Background](#background)
+
+In 1967, American political scientist Alan Westin published his seminal work on data privacy and protection. In the book, titled "Privacy and Freedom", Westin wrote, "The issue of privacy raised by computerization is whether the increased collection and processing of information for diverse public and private purposes, if not carefully controlled, could lead to a sweeping power of surveillance by government over individual lives and organizational activity" (Westin 119; ch. 7). Although Westin did not predict the rise of social media companies such as Facebook or Twitter—both of whom have a business model based on collecting millions of peoples' personal data—it is still remarkable that near the dawn of the Information Age, Westin was prescient enough to predict the power networked computers would have in transforming public perception of personal data and privacy. He concludes that in order to protect privacy, property rights must be defined for personal information (222; ch 12). Since then, this idea has come to be known as "data propertization". Specifically, the view that propertization is necessary to protect privacy will be referred to as the **"Westinian perspective"**.
+
+In 2017, Andrew Yang launched his campaign to become the Democratic Party's nominee for the 2020 United States Presidential Election (Statement of Candidacy). One of the policies he ran on was "data as a property right". However, unlike Westin, Yang's primary reason for propertization of data is to generate money for data subjects ("Data as a Property Right"). After concluding his 2020 Presidential candidacy, Yang went on to found the Data Dividend Project (DDP). A notable claim of the DDP's manifesto is that "ownership and control of data is a fundamental human right", and the organization's stated goal is to "recover the money that was made off of your data and to give it back to you" ("The DDP Manifesto"). Yang does not explore further details of his model, but since he is the first presidential candidate to push this idea into the national discourse, it is worthwhile to examine propertization from the **"Yangian perspective"** as well.
+
+<a name="arguments-for"></a>
+
+## 4. [Arguments for and Models of Propertization](#arguments-for)
+
+Schwartz's proposed model for propertized personal information is closely aligned with the Westinian view and consists of five key elements. First, data subjects must be able to freely choose the categories of data they share and the purposes for which the data can be used; any further use or transfer either by the initial data collector or another data collection party must be authorized by the original data subject's affirmative approval. Second, the default mode of any data transaction must be opt-in, rather than opt-out. Third, data subjects have the right of exit, meaning they can cancel any existing data transaction, halting current and future flows of personal information. Fourth, the state is responsible for determining damages when harm is caused to information privacy rather than allowing data subjects to negotiate directly with data collectors. Fifth, institutions that facilitate or regulate the flow of propertized personal information should be decentralized. Schwartz does not believe in a single, unified market for data. Instead he proposes a system composed of several smaller, distinct marketplaces operating under the oversight of a hypothetical governmental body called the "Data Protection Commission" (Schwartz 2094-2116).
+
+The model proposed by Jeffrey Ritter, a lecturer of computer science at Oxford University, and Anna Mayer, a graduate student at the Institute of Political Science in Vienna, is based on the premise that information is not an intangible asset. They assert that information is a tangible asset due to its necessary representation in some physical medium (Ritter and Mayer 255-256). For instance, consider that YouTube tracks users' search and watch history ("Privacy Policy"). This data does not exist in some ephemeral fashion, but is represented as electronic signals in at least one computer. Thus, Ritter and Mayer suggest that existing rules for property ownership can be used as a basis for developing a system of property rights for data. They further note that such a system would require the creation of data-identifying descriptors called "metadata" for proof of ownership, analogous to a land registry (Ritter and Mayer 263-266). There are some cases where Ritter and Mayer's proposal deviates from existing legislation pertaining to physical assets. For example, they argue that ownership of data can be established even before the data is "complete, sensible, or a finished product". This is similar to the rules for copyright, which is governed by intellectual property law. However, in contrast to copyright rules, Ritter and Mayer argue that "creativity or original work of authorship" is not required for establishment of ownership over data (267-268). Importantly, their model contains elements of both the Westinian and Yangian schools of thought. In the interest of privacy, they argue that responsibility for ensuring the integrity of data is transferred along with ownership of it. Such a view assigns greater legal responsibility to the data collector for protecting the personal information yielded by the data subject. They also argue that metadata can be produced such that it is non-personally-identifiable using current and emerging technologies such as blockchain distributed ledgers, zero-knowledge proofs, and quantum cryptography (275-276). Pursuant to the Yangian perspective, Ritter and Mayer also suggest that propertization of data would legitimize the sale of future streams of data, similar to contractual agreements for future sales of unborn livestock or not-yet-harvested crops (274).
+
+Nadezhda Purtova, an associate professor of law at Tilburg University, offers another view. She argues that although data is not recognized as de jure property, it certainly is de facto property simply because of its high economic value and treatment as a commodity. Thus, the question for Purtova is not whether data should be propertized. Rather, she is interested in determining who should be the default owner of propertized personal information (Purtova 84). As a starting point for her argument, she references the work of economic scholar John Umbeck, who explored the behavior of miners during the California Gold Rush. Umbeck asserts that in the absence of well-defined legal entitlements to property, individual actors take it upon themselves to establish claims, which leads to the creation of de facto property rights. During the California Gold Rush, no particular miner was more capable of exercising excessive power over the others, so claims were distributed somewhat evenly (87-89). Purtova argues that in today's world, claims to data property are not distributed so evenly. She says that the failure of existing legislation to create well-defined property rights for data has allowed data collectors, as the generally more powerful actors, to exert significant amounts of control over the personal information produced by data subjects. Additionally, she claims that there are no meaningful choices to avoid data collection, citing the right that most data collectors reserve for themselves to alter Terms of Service agreements at any time and more generally, the lack of flexibility in negotiating said agreements (105-106). Thus, Purtova concludes that legally placing the rights of data ownership in the hands of data subjects is the only way to correct this power asymmetry. Expanding upon the work of previous data property theorists, Purtova also says that it is not out of the question to consider communal ownership over personal data as an alternative to individual ownership. Such a model might be useful in cases where there are multiple data subjects with a relevant claim to interest in the information, such as health data pertaining to an entire family (110). Although Purtova's argument is built upon economic theories about scarcity and propertization of resources, her model for data propertization does not touch upon the idea of data subjects receiving compensation from data collectors. Therefore, Purtova seems to fall on the Westnian side of the propertization camp.
+
+In her opening statement to the US Senate Committee on Banking, Housing, and Urban Affairs, Michelle Denenedy, the Chief Executive Officer of a data analytics company called DrumWave, offers yet another view. Although she does not delve into as much technical detail as other scholars, her relation of a bathroom stall to data privacy is interesting:
+
+<IndentedBlock>
+  When I go into a public bathroom stall, for a brief moment, that stall is
+  mine. I don't own that real estate; I don't even buy a ticket. I just go into
+  the stall, and the expectation is that I close the stall, and it's mine for a
+  moment. The moment I left, it's no longer mine. So think about data moving in
+  and out of cells… in databases, left and right.
+</IndentedBlock>
+
+While Dennedy does not elaborate further on her analogy, if one understands the bathroom stall user to represent personal information, it can be reasonably inferred that she believes ownership of data rests with the original data subject, despite "moving in and out of … [data collectors'] databases". Later in the hearing, Dennedy states that it is imperative for governmental bodies to establish a more formal regulatory framework for data privacy, and that she would not be opposed to introducing elements of property rights into data legislation ("Hearing on Data Ownership"). Her statements highlight the fact that within Silicon Valley corporations, there is recognition that legal action must be taken in regards to data protection, and that propertization might be part of the solution.
+
+<a name="arguments-against"></a>
+
+## 5. [Arguments against and Alternatives to Propertization](#arguments-against)
+
+One argument against the propertization of data is that many people are satisfied with and unwilling to alter the status quo. Some people enjoy getting targeted advertisements. Others enjoy algorithmic personalization of web services. For example, the selection of videos presented on the YouTube homepage is curated for each user according to what the company's automated system thinks the user would like to watch. Facebook and Twitter control the content displayed to each user in a similar fashion. Whether the reader agrees with the results of this algorithmic control is an issue beyond the scope of this paper, but it is evident that these services would not be possible without data collection. Another frequently-made point is that the current paradigm of data collection makes web services appear to be free. The collection, analysis, and sale of personal data happens in the background, with little need for the user to do anything. In fact, this business model is so hegemonic that many people now believe web services such as streaming video or instant messaging should not come with a monetary charge. This mindset has caused a deadlock in which major technology companies are unwilling to make subscription-based business models since data collection is more profitable, while consumers are unwilling to pay for services operating under such business models because of how accustomed they are to the current system of "free" services. Additionally, smaller companies with innovative business models face immense difficulty gaining a foothold in the market because the perceived usefulness of web services like social media or online shopping is correlated with the number of users on the platform ("Hearing on Data Ownership").
+
+Another argument against the propertization of data is that valuation of data is difficult. Data that is useful, or economically valuable, in one context might not be in another. For example, personal data can be categorized into three types: volunteered, observed, and inferred ("Hearing on Data Ownership"). Volunteered data is actively yielded, like when YouTube asks viewers to fill out a survey before watching a video. Observed data is produced simply by existing. Just by using the YouTube platform, data subjects provide personal information about the types of content they prefer watching. Inferred data is produced by the analysis of volunteered and observed data. YouTube engineers can use statistical models to analyze survey answers provided by the data subject and metrics found in the observed data to make inferences about the data subject. Perhaps this person is interested in science videos, or is likely to buy a car. This is information that has been processed and is the most useful to third parties. Proponents of this argument ask, "If we propertize data, which of these categories should be propertized?" For volunteered data, the data subject puts in the work, but for observed data, the data subject does not have to do any "work". For instance, observed data such as heartbeat, sleeping patterns, and calories burned are produced by a FitBit when the user wears it, but the user does not have to do anything to produce the data other than be alive. Lastly, inferred data, which is the product that is directly sold to third-parties, is where the data collector has to put in the most work. If inferred data is propertized in favor of the individual, should the methods of processing also be propertized? Most would agree that a company has legal ownership over the software algorithms produced by their engineers for analytics, so whose property right takes precedence? The argument has also been made that if inferred data is what we choose to focus on, it might not be meaningful to talk about propertization of data. For Corien Prins, a professor of law and informatization at Tilburg University, the issue should be centered on the commodification of identities and behavior, not data itself (Prins 5).
+
+Other critics point out that propertization would force data subjects to assume greater responsibility over their own data. As it is, few people read Terms of Service agreements. If data is propertized, data subjects would be charged with navigating their own way in a data marketplace where there is an information asymmetry between themselves and the data collecting corporations interested in purchasing personal data. It is difficult to imagine individuals reading even longer contracts that explain their rights as the lawful owner of their data, let alone spending the time to shop around for the ideal "customer" of their data. How would prices for the data even be negotiated? Are we talking about the marginal cost for time spent browsing Facebook versus working a job? (Kerry and Morris)
+
+Ivan Stepanov, a professor of law at Friedrich-Alexander University of Erlangen-Nürnberg, argues that data should not be propertized on economic grounds. Stepanov claims that data should be treated as an intangible asset because of the ease with which it can be reproduced and the ability of multiple parties to make use of the same data. As an illustration, imagine that someone named John purchases a car from his local automobile dealership. Then, another person, who we shall call Jane, visits the same automobile dealership and requests to purchase the exact same car. She would be unable to do so because ownership of the car has transferred to John. Thus, if she wishes to purchase the car, she would need to negotiate the sale with John, rather than the dealership. In contrast, if a data collector sells personal data to an interested party, another party could still purchase the same personal data from the collector. For example, pretend the data collector is Facebook, the information is which users like which movies, and the interested parties are Netflix and Hulu. If Facebook sells this data to Netflix, that does not preclude the company from selling the exact same data to Hulu. Additionally, Stepanov argues that property rights are introduced for physical assets as a way of managing scarcity. But because data is so easily reproduced, there is no scarcity to be managed (Stepanov 75-76). Stepanov also demonstrates that intellectual property rights would not suffice for the regulation of data. He argues that such rights are generally used to incentivize creation, which would run opposite to the Westinian school of thought. Using intellectual property rights for regulating data would only incentivize subjects to create more, rather than less, which is not particularly conducive to privacy (77). Finally, Stepanov argues that the propertization of data might create "a tragedy of the anticommons", in reference to the famous paper, "The Tragedy of the Commons". In that article, American biologist Garrett Hardin describes the tragedy of the commons as a situation in which a limited resource is depleted to the point of uselessness due to lack of access regulation (Hardin 1243). Conversely, the tragedy of the anticommons happens when there are too many overlapping interests and the system of rights is so complex as to prevent any efficient use of the property. Since personal data stored in a digital medium can simultaneously exist in the hands of multiple parties, propertization of it would introduce much friction in the flow of information, which would severely hamper meaningful use (Stepanov 79).
+
+Yet another view on why data should not be propertized is that privacy is a human right. Westin wrote that privacy is not only a value necessary for the well functioning of democratic societies, but that it is also an essential and invaluable part of being human (Westin 26-27, 35; ch.1, ch.2). From this perspective, he argued for the propertization of data to protect privacy of the individual from government surveillance. However, since the modern debate surrounding data propertization is generally focused on personal information as a commodity traded among private companies rather than personal information as used by the government, some argue that Westin's arguments are now irrelevant. Proponents of this view say that regulating data as property would only legitimize the right of people to yield their privacy to data collectors. While privacy is a fundamental right that should be protected, propertization and the subsequent creation of a data marketplace is not the solution. If data is treated in such a manner, the rich will be able to pay for their privacy, while the poor will be incentivized to yield their personal data for monetary compensation. By its definition, human rights are considered inalienable, so if privacy is such a fundamental right, why should data subjects be able to waive it? ("Hearing on Data Ownership")
+
+<a name="gdpr-and-ccpa"></a>
+
+## 6. [GDPR and CCPA](#gdpr-and-ccpa)
+
+Summarized, the GDPR states that data subjects have the following rights:
+
+1. Right to be informed
+2. Right to access
+3. Right to rectification
+4. Right to erasure
+5. Right to restrict processing
+6. Right to data portability
+7. Right to object
+8. Rights in relation to automated decision making and profiling
+
+To enforce the protection of these rights and other parts of the regulation, the European Union levies harsh fines on violators, requiring all organizations to consider data protection in their products and services by "design and default" (Regulation 2016/679). Meanwhile, CCPA grants the following rights to Californians:
+
+1. Right to know about the personal information a business collects about them
+2. Right to mandate the deletion of collected personal data
+3. Right to opt out of the sale of personal information
+4. Right to non-discrimination for exercising CCPA rights (Title 1.18.5)
+
+The GDPR and CCPA match some models of propertization as mentioned previously, but do not explicitly call data "property". Nonetheless, some scholars such as Jacob Victor, who examined a draft version of GDPR, argue that these laws implicitly use elements of propertization as a way of protecting privacy. In his analysis, he points out the ways in which GDPR resembles Schwartz's proposed model of propertization (Victor 522-524).
+
+<a name="future-work"></a>
+
+## 7. [Future Work](#future-work)
+
+Future work to be done includes the consideration of other forms of data. This paper has only examined personal data, but there is also industrial and scientific data. In some cases, such distinctions are clear. For example, it is generally agreed that a manufacturing company is entitled to the data produced by the assembly robots in their factories. Likewise, few would argue that a governmental organization such as the Environmental Protection Agency does not have the right to data collected by sensors placed in government-owned bodies of water. However, the demarcation between personal, industrial, and scientific data is seldomly so clean. This paper examined inferred data as a category of personal data, but one could argue that inferred data is really industrial data (i.e., a product of the data collector's engineering team).
+
+Another area of consideration is that the landscape of technology firms is ever-changing. Recently, there was an antitrust hearing in the United States Congress involving some of the biggest technology companies such as Facebook and Amazon (Rushe and Paul). If the United States federal government manages to break these companies apart, there would be a drastic change in the landscape and new actors may emerge. We might see novel business models that are different from the current one.
+
+Moreover, humanity needs to carefully think about what it wants for the future. Some science fiction authors and other future-oriented imaginaries regard a world where everything is customized and sentient machines coexist with humans as a utopia. If this vision of our future is what we long for, it will necessitate some form of data collection. Artificial intelligence in its current state relies on the availability of large amounts of data, and right now, it is fairly easy to scrape such information off the web. As an illustration, the facial recognition company Clearview AI built its systems using "publicly available images", arguing that its collection of such data is protected under the First Amendment to the US Constitution (Perez and Cook). Clearview AI has been taken to court a number of times over concerns about privacy, but the initial lack of well-defined property rights for personal information is what allowed them to scrape images in the first place. If data is propertized, the accessibility of this information would undoubtedly change. Would such a transformation be for the better or for the worse?
+
+Lastly, it is of the author's humble opinion that the reader should review the original sources for this paper. The points presented here are mere summaries, not the full arguments. To not read the referenced works would be to downplay the complexities of the issue.
+
+<a name="conclusion"></a>
+
+## 8. [Conclusion](#conclusion)
+
+The GDPR and CCPA are taking steps in the right direction toward increasing privacy rights and data protection for the individual. But few consumers truly understand the issue. Anecdotally, most people simply deleted or ignored the emails about changing Terms of Service when GDPR and CCPA went into effect. Thus, addressing the issue as "data propertization" is useful because regardless of the model in question, Westerners are attracted to the idea of property. As reflected in Enlightenment thinkers such as John Locke—who famously claimed that people have inalienable rights to "life, liberty, and property"—it seems that Western culture regards the right to property on the same level as, or at least close to, human rights.
+
+While the stated goal of this paper was to provide an overview of data propertization, it is the author's recommendation that Purtova's advice be taken seriously. Data is undeniably a high-value asset and right now, the lack of regulation has enabled the data collecting technology companies to make up the rules. Regulatory steps must be taken to correct this information power asymmetry. Furthermore, between "data" and "property", the latter is the more malleable concept. Ritter and Mayer are technically correct in asserting that data is a physical construct. Every bit of data on the Internet is represented by a computer bit somewhere in the real world. The meaning of the bits is dependent on the interpretation, but it is nonetheless very real. On the other hand, property is a human social construct, and social constructs change. The concept of property was once revised to make room for intellectual property, and so it is not unfathomable to revise it again in the name of data as property.
+
+## Works Cited
+
+<WorksCited>
+California, California State Legislature, Title 1.81.5. California Consumer Privacy Act of 2018 [1798.100 - 1798.199], California Legislative Information. https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5. Accessed 29 July 2020.
+
+"Data as a Property Right - Yang2020 - Andrew Yang for President." Yang2020, www.yang2020.com/policies/data-property-right/. Accessed 28 July 2020.
+
+European Union, European Parliament, Regulation 2016/679 of the European Parliament and of the Council of 27 April 2016, Official Journal of the European Union, 4 May 2016. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679. Accessed 29 July 2020.
+
+Hardin, Garrett. "The Tragedy of the Commons." Science, vol. 162, no. 3859, 1968, pp. 1243–1248. JSTOR, www.jstor.org/stable/1724745.
+
+"Hearing on Data Ownership: Exploring Implications for Data Privacy Rights and Data Valuation." 116th United States Congress, Senate Committee on Banking, Housing, and Urban Affairs. 24 Oct. 2019. www.banking.senate.gov/hearings/data-ownership-exploring-implications-for-data-privacy-rights-and-data-valuation/.
+
+Kerry, Cameron F., and John B. Morris. "Why Data Ownership Is the Wrong Approach to Protecting Privacy." Brookings, Brookings, 26 June 2019, www.brookings.edu/blog/techtank/2019/06/26/why-data-ownership-is-the-wrong-approach-to-protecting-privacy/.
+
+Perez, Gisela, and Hilary Cook. "Google, YouTube, Venmo and LinkedIn Send Cease-and-Desist Letters to Facial Recognition App That Helps Law Enforcement." CBS News, CBS Interactive, 5 Feb. 2020, www.cbsnews.com/news/clearview-ai-google-youtube-send-cease-and-desist-letter-to-facial-recognition-app/.
+"Privacy Policy – Privacy & Terms." Google, policies.google.com/privacy. Accessed 31 July 2020.
+
+Prins, Corien. "The Propertization of Personal Data and Identities." Electronic Journal of Comparative Law, vol. 8, no. 3, Oct. 2004, pp. 1–7., www.ejcl.org/83/art83-1.PDF. Accessed 31 July 2020.
+
+Purtova, Nadezhda. "The illusion of personal data as no one's property." Law, Innovation and Technology, vol. 7, no. 1, 1 Jul. 2015, pp. 83–111. Taylor & Francis Online. doi:10.1080/17579961.2015.1052646.
+
+Ritter, Jeffrey, and Anna Mayer. "Regulating Data as Property: A New Construct for Moving Forward." Duke Law & Technology Review, vol. 16, no. 1, 6 Mar. 2018, pp. 220–277., dltr.law.duke.edu/2018/03/06/regulating-data-as-property-a-new-construct-for-moving-forward/.
+
+Rushe, Dominic, and Kari Paul. "'Too Much Power': Congress Grills Top Tech CEOs in Combative Antitrust Hearing." The Guardian, Guardian News and Media, 29 July 2020, www.theguardian.com/technology/2020/jul/29/tech-hearings-facebook-mark-zuckerberg-amazon-jeff-bezos-apple-tim-cook-google-sundar-pichai-congress.
+
+Schwartz, Paul M. "Property, Privacy, and Personal Data." Harvard Law Review, vol. 117, no. 7, 2004, pp. 2056–2128. JSTOR, doi:10.2307/4093335.
+Stepanov, Ivan. "Introducing a Property Right over Data in the EU: the Data Producer's Right – an Evaluation." International Review of Law, Computers & Technology, vol. 34, no. 1, 1 July 2019, pp. 65–86., doi:10.1080/13600869.2019.1631621.
+
+"The DDP Manifesto". Data Dividend Project, https://www.datadividendproject.com/manifesto. Accessed 31 July 2020.
+
+United States, Federal Election Commission, Yang, Andrew. Statement of Candidacy, 2017. docquery.fec.gov/pdf/624/201711069086611624/201711069086611624.pdf. Accessed 28 July 2020.
+
+Victor, Jacob M. "The EU General Data Protection Regulation: Toward a Property Regime for Protecting Data Privacy." The Yale Law Journal, vol. 123, no. 2, 2013, pp. 513–528. JSTOR, www.jstor.org/stable/23744289.
+
+Westin, Alan F. Privacy and Freedom. Bodley Head, 1967, Z-Library, b-ok.cc/book/5341077/200a40. Accessed 27 July 2020.
+
+</WorksCited>
