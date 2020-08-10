@@ -9,7 +9,7 @@ const DarkModeToggler = styled.button(({ color }) => ({
   border: 'none',
   cursor: 'pointer',
   position: 'absolute',
-  right: '16px',
+  right: '24px',
   top: '16px',
   fontSize: '0.75em',
 }))

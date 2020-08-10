@@ -7,7 +7,7 @@ const StyledFooterText = styled.footer({
   textAlign: 'center',
   margin: 'auto',
   marginTop: '2rem',
-  marginBottom: '1rem',
+  marginBottom: '2rem',
 })
 
 const Footer = () => (
