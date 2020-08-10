@@ -1,4 +1,4 @@
-dev:
+develop:
 	npm run develop
 
 build:
@@ -7,3 +7,6 @@ build:
 
 deploy:
 	npm run deploy
+
+clean:
+	npm run clean
