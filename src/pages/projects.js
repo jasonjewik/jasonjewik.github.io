@@ -2,7 +2,7 @@ import React from 'react'
 
 import SEO from '../components/seo'
 
-const NotFoundPage = () => (
+const Projects = () => (
   <>
     <SEO title="Projects" />
     <h1>My Projects</h1>
@@ -14,4 +14,4 @@ const NotFoundPage = () => (
   </>
 )
 
-export default NotFoundPage
+export default Projects
