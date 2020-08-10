@@ -13,6 +13,8 @@ export default function PageTemplate({ data: { mdx } }) {
       <SEO title={mdx.frontmatter.title} description={mdx.excerpt} />
       <div>
         <h1>{mdx.frontmatter.title}</h1>
+        <h3 style={{ marginTop: 0 }}>{mdx.frontmatter.date}</h3>
+        <br />
         <MDXProvider components={shortcodes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -28,6 +30,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        date
       }
       excerpt
     }
