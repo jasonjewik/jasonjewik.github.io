@@ -33,7 +33,7 @@ const Blog = ({ data }) => {
 
 export const pageQuery = graphql`
   query blogIndex {
-    allMdx {
+    allMdx(sort: { fields: frontmatter___index, order: DESC }) {
       edges {
         node {
           id
