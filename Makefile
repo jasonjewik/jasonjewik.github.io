@@ -1,11 +1,11 @@
-develop:
+default:
 	npm run develop
 
 build:
 	npm run build
 	copy CNAME public
 
-deploy:
+deploy: build
 	npm run deploy
 
 clean:
