@@ -26,7 +26,6 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-sizeme": "^2.6.12",
     "react-transition-group": "^4.4.1",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
