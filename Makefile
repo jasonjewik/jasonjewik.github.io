@@ -3,7 +3,8 @@ default:
 
 build:
 	npm run build
-	copy CNAME public
+	-copy CNAME public
+	-cp CNAME public
 
 deploy: build
 	npm run deploy
