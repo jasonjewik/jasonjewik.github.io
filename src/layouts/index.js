@@ -9,8 +9,7 @@ import Transition from '../components/transition'
 
 const ContentWrapper = styled.div({
   margin: 'auto',
-  width: '85%',
-  maxWidth: '890px',
+  width: '60%',
 })
 
 const Layout = ({ children, location }) => {

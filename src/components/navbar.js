@@ -2,7 +2,6 @@ import React from 'react'
 import Emoji from 'a11y-react-emoji'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
-import { withSize } from 'react-sizeme'
 
 const spacing = {
   marginLeft: '0.5em',
@@ -24,19 +23,14 @@ const Separator = () => {
   return <div style={spacing}>/</div>
 }
 
-const Navbar = ({ size }) => {
-  let justify
-  if (size.width < 420) justify = 'center'
-  else justify = 'flex-end'
-
+const Navbar = () => {
   const BarDiv = styled.div({
-    width: '85%',
-    maxWidth: '890px',
+    width: '60%',
     margin: 'auto',
     marginTop: '7vh',
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: justify,
+    justifyContent: 'flex-end',
   })
 
   return (
@@ -56,4 +50,4 @@ const Navbar = ({ size }) => {
   )
 }
 
-export default withSize()(Navbar)
+export default Navbar
