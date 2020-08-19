@@ -1,10 +1,11 @@
 import React from 'react'
-import SEO from '../components/seo'
 import Emoji from 'a11y-react-emoji'
-
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
+import { withSize } from 'react-sizeme'
+
 import ColoredText from '../components/colored-text'
+import SEO from '../components/seo'
 
 const AnimatedHandWave = () => {
   const wave = keyframes`
@@ -52,31 +53,35 @@ const StyledPrefooter = styled.div({
   marginTop: '32px',
 })
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <h1>
-      <AnimatedHandWave /> <span>Hello there!</span>
-    </h1>
-    <h2>
-      I'm a computer science undergrad student @ UCLA and aspiring AI scientist
-      (or maybe ML engineer, I haven't decided yet).
-    </h2>
-    <h2>
-      I believe in the power of AI for{' '}
-      <ColoredText color="#38ad79">social and environmental good</ColoredText>,
-      and I'm also an advocate for equalizing{' '}
-      <ColoredText color="#2d7dae">access to CS education</ColoredText>.
-    </h2>
-    <StyledPrefooter>
-      If you'd like to say hi or noticed my website looks weird on your device,
-      please send me a message through this{' '}
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
-        contact form
-      </a>
-      .
-    </StyledPrefooter>
-  </>
-)
+const IndexPage = ({ size }) => {
+  return (
+    <>
+      <SEO title="Home" />
+      <h1>
+        {size.width >= 420 && <AnimatedHandWave />}
+        {size.width >= 420 && ' '}
+        <span>Hello there!</span>
+      </h1>
+      <h2>
+        I'm a computer science undergrad student @ UCLA and aspiring AI
+        scientist (or maybe ML engineer, I haven't decided yet).
+      </h2>
+      <h2>
+        I believe in the power of AI for{' '}
+        <ColoredText color="#38ad79">social and environmental good</ColoredText>
+        , and I'm also an advocate for equalizing{' '}
+        <ColoredText color="#2d7dae">access to CS education</ColoredText>.
+      </h2>
+      <StyledPrefooter>
+        If you'd like to say hi or noticed my website looks weird on your
+        device, please send me a message through this{' '}
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
+          contact form
+        </a>
+        .
+      </StyledPrefooter>
+    </>
+  )
+}
 
-export default IndexPage
+export default withSize()(IndexPage)
