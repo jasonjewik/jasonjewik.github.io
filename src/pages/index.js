@@ -5,6 +5,9 @@ import Emoji from 'a11y-react-emoji'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
 import ColoredText from '../components/colored-text'
+import A from '../components/non-flavored-links'
+
+import { isMobile } from 'react-device-detect'
 
 const AnimatedHandWave = () => {
   const wave = keyframes`
@@ -56,17 +59,35 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <h1>
-      <AnimatedHandWave /> <span>Hello there!</span>
+      {!isMobile && <AnimatedHandWave />}
+      {!isMobile && ' '}
+      <span>Hello there!</span>
     </h1>
     <h2>
-      I'm a computer science undergrad student @ UCLA and aspiring AI scientist
-      (or maybe ML engineer, I haven't decided yet).
+      I'm a computer science undergrad student @ UCLA interested in deep
+      learning.
     </h2>
     <h2>
-      I believe in the power of AI for{' '}
-      <ColoredText color="#38ad79">social and environmental good</ColoredText>,
-      and I'm also an advocate for equalizing{' '}
-      <ColoredText color="#2d7dae">access to CS education</ColoredText>.
+      I believe the most pressing issue for AI researchers and engineers right
+      now is{' '}
+      <A href="" title="No link for this (yet)">
+        <ColoredText color="#38ad79">how to use AI ethically</ColoredText>
+      </A>
+      . I'm also an advocate for{' '}
+      <A
+        href="https://teachla.uclaacm.com/classes/ml"
+        title="I help teach this course!"
+      >
+        <ColoredText color="#2d7dae">equalizing access</ColoredText>
+      </A>{' '}
+      to CS education and{' '}
+      <A
+        href="https://anchor.fm/ucla-acm-ai"
+        title="I also edit this podcast about diversity in AI"
+      >
+        <ColoredText color="#2d7dae">increasing the diversity</ColoredText>
+      </A>{' '}
+      of our field.
     </h2>
     <StyledPrefooter>
       If you'd like to say hi or noticed my website looks weird on your device,
@@ -74,7 +95,7 @@ const IndexPage = () => (
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
         contact form
       </a>
-      .
+      . My pronouns are he/him/his.
     </StyledPrefooter>
   </>
 )

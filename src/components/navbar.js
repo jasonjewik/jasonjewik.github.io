@@ -1,7 +1,8 @@
 import React from 'react'
 import Emoji from 'a11y-react-emoji'
-import styled from '@emotion/styled'
 import { Link } from 'gatsby'
+
+import { isMobile, withOrientationChange } from 'react-device-detect'
 
 const spacing = {
   marginLeft: '0.5em',
@@ -23,18 +24,37 @@ const Separator = () => {
   return <div style={spacing}>/</div>
 }
 
-const Navbar = () => {
-  const BarDiv = styled.div({
-    width: '60%',
-    margin: 'auto',
-    marginTop: '7vh',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-  })
+const BarDiv = ({ isPortrait, children }) => {
+  let width = '60%'
+  let justify = 'flex-end'
+
+  if (isMobile && isPortrait) {
+    width = '85%'
+    justify = 'center'
+    console.log('I changed!')
+  }
 
   return (
-    <BarDiv>
+    <div
+      style={{
+        width: width,
+        margin: 'auto',
+        marginTop: '7vh',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: justify,
+      }}
+    >
+      {children}
+    </div>
+  )
+}
+
+const OrientedBarDiv = withOrientationChange(BarDiv)
+
+const Navbar = () => {
+  return (
+    <OrientedBarDiv>
       <NavItem destination="/">
         <Emoji symbol="🏠" /> HOME
       </NavItem>
@@ -46,7 +66,7 @@ const Navbar = () => {
       <NavItem destination="/projects/">
         <Emoji symbol="👨‍💻" /> PROJECTS
       </NavItem>
-    </BarDiv>
+    </OrientedBarDiv>
   )
 }
 
