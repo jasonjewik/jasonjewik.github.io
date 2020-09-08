@@ -31,7 +31,6 @@ const BarDiv = ({ isPortrait, children }) => {
   if (isMobile && isPortrait) {
     width = '85%'
     justify = 'center'
-    console.log('I changed!')
   }
 
   return (

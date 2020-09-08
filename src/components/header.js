@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeContext } from '../context/theme-context'
+import { themes } from '../context/theme-context'
 import styled from '@emotion/styled'
 import Emoji from 'a11y-react-emoji'
 
@@ -14,16 +14,24 @@ const DarkModeToggler = styled.button(({ color }) => ({
   fontSize: '0.75em',
 }))
 
-const Header = () => (
-  <ThemeContext.Consumer>
-    {theme => (
+class Header extends React.Component {
+  constructor(props) {
+    super(props)
+    let currentHour = new Date().getHours()
+    let isNight = currentHour < 7 || currentHour >= 18
+    if (isNight) props.themeContext.setInitTheme(themes.dark)
+    else props.themeContext.setInitTheme(themes.light)
+  }
+
+  render() {
+    return (
       <header>
         <div>
           <DarkModeToggler
-            color={theme.dark ? '#fff' : '#2a2b2d'}
-            onClick={theme.toggleDark}
+            color={this.props.themeContext.theme.color}
+            onClick={this.props.themeContext.toggleTheme}
           >
-            {theme.dark ? (
+            {this.props.themeContext.theme === themes.dark ? (
               <span>
                 Light mode <Emoji symbol="🌞" label="sun" />
               </span>
@@ -35,8 +43,8 @@ const Header = () => (
           </DarkModeToggler>
         </div>
       </header>
-    )}
-  </ThemeContext.Consumer>
-)
+    )
+  }
+}
 
 export default Header
