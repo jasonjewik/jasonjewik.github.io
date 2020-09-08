@@ -11,8 +11,15 @@ class ThemeProvider extends React.Component {
   constructor(props) {
     super(props)
 
-    const currentHour = new Date().getHours()
-    const isNight = currentHour < 7 || currentHour >= 18
+    let currentHour = new Date().getHours()
+    let isNight = currentHour < 7 || currentHour >= 18
+
+    this.timeChecker = setInterval(() => {
+      currentHour = new Date().getHours()
+      isNight = currentHour < 7 || currentHour >= 18
+      this.setState({ dark: isNight })
+    }, 3000)
+
     this.state = {
       dark: isNight,
     }
@@ -20,25 +27,25 @@ class ThemeProvider extends React.Component {
 
   toggleDark = () => {
     let dark = !this.state.dark
-    this.setState({ dark })
+    this.setState({ dark: dark })
+    if (this.timeChecker) {
+      clearInterval(this.timeChecker)
+      this.timeChecker = 0
+    }
   }
 
   render() {
-    const { children } = this.props
-    const { dark } = this.state
-
     return (
       <ThemeContext.Provider
         value={{
-          dark,
+          dark: this.state.dark,
           toggleDark: this.toggleDark,
         }}
       >
-        {children}
+        {this.props.children}
       </ThemeContext.Provider>
     )
   }
 }
 
-export default ThemeContext
-export { ThemeProvider }
+export { ThemeContext, ThemeProvider }

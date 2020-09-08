@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemeContext from '../context/theme-context'
+import { ThemeContext } from '../context/theme-context'
 import styled from '@emotion/styled'
 import Emoji from 'a11y-react-emoji'
 
