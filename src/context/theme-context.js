@@ -27,11 +27,14 @@ class ThemeProvider extends React.Component {
     super(props)
     this.state = defaultState
 
-    this.timeChecker = setInterval(() => {
-      let currentHour = new Date().getHours()
-      let isNight = currentHour < 7 || currentHour >= 18
-      this.setState({ theme: isNight ? themes.dark : themes.light })
-    }, 3000)
+    this.timeChecker = setInterval(this.updateTheme, 3000)
+    this.updateTheme()
+  }
+
+  updateTheme = () => {
+    let currentHour = new Date().getHours()
+    let isNight = currentHour < 7 || currentHour >= 18
+    this.setState({ theme: isNight ? themes.dark : themes.light })
   }
 
   toggleTheme = () => {
@@ -47,7 +50,7 @@ class ThemeProvider extends React.Component {
   }
 
   setInitTheme = theme => {
-    this.setState({ theme: theme, toggleCount: 1 })
+    this.setState({ theme: theme })
   }
 
   render() {

@@ -2,10 +2,10 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { ThemeContext, ThemeProvider } from './src/context/theme-context'
 
-const WrapperDiv = styled.div(({ theme }) => ({
+const WrapperDiv = styled.div(({ theme, toggleCount }) => ({
   color: theme.color,
   backgroundColor: theme.backgroundColor,
-  transition: theme.toggleCount > 0 ? theme.transition : 'none',
+  transition: toggleCount > 0 && theme.transition,
   width: '100vw',
   minHeight: '100vh',
   position: 'absolute',
@@ -16,7 +16,11 @@ const WrapperDiv = styled.div(({ theme }) => ({
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider>
     <ThemeContext.Consumer>
-      {({ theme }) => <WrapperDiv theme={theme}>{element}</WrapperDiv>}
+      {({ theme, toggleCount }) => (
+        <WrapperDiv theme={theme} toggleCount={toggleCount}>
+          {element}
+        </WrapperDiv>
+      )}
     </ThemeContext.Consumer>
   </ThemeProvider>
 )
