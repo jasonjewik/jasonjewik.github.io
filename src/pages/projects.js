@@ -4,11 +4,10 @@ import SEO from '../components/seo'
 const Projects = () => (
   <>
     <SEO title="Projects" />
-    <h1>My Projects</h1>
+    <h1>Selected Projects</h1>
     <p>
-      Will finish this page up at some future time, but for now, you can find me
-      on <a href="https://github.com/jasonjewik">GitHub</a> and{' '}
-      <a href="https://medium.com/@jasonjewik">Medium</a>.{' '}
+      I will add some projects here eventually. For now, please check out my
+      GitHub profile by clicking the icon in the footer.
     </p>
   </>
 )

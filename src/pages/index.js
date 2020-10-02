@@ -66,10 +66,9 @@ const IndexPage = () => (
     <h2>
       I'm a computer science undergrad student @ UCLA interested in deep
       learning.
-    </h2>
-    <h2>
-      I believe the most pressing issue for AI researchers and engineers right
-      now is{' '}
+      <br />
+      <br />I believe the most pressing issue for AI researchers and engineers
+      right now is{' '}
       <A href="" title="No link for this (yet)">
         <ColoredText color="#38ad79">how to use AI ethically</ColoredText>
       </A>

@@ -8,7 +8,7 @@ import A from './non-flavored-links'
 const Logos = ({ themeContext }) => {
   const data = useStaticQuery(graphql`
     query {
-      linkedin: file(relativePath: { eq: "LI-In-Bug.png" }) {
+      linkedin: file(relativePath: { eq: "LI-In-Bug-cropped.png" }) {
         childImageSharp {
           fluid(fit: INSIDE) {
             ...GatsbyImageSharpFluid
