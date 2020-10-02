@@ -36,7 +36,7 @@ const Layout = ({ children, location }) => {
           <Transition location={location}>
             <OrientedContentWrapper>
               {children}
-              <Footer />
+              <Footer themeContext={themeContext} />
             </OrientedContentWrapper>
           </Transition>
         </>

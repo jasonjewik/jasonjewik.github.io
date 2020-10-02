@@ -9,7 +9,7 @@ const Blog = ({ data }) => {
     <>
       <div style={{ marginBottom: '4rem' }}>
         <SEO title="Blog" />
-        <h1>My Blog</h1>
+        <h1>Blog Posts</h1>
         {posts.map(({ node: post }) => (
           <div key={post.id}>
             <Link to={post.fields.slug}>
@@ -26,6 +26,22 @@ const Blog = ({ data }) => {
             <p>{post.excerpt}</p>
           </div>
         ))}
+        <h1>My Recent Reads</h1>
+        <div style={{ marginTop: '2.175rem', marginBottom: '4rem' }}>
+          <ul>
+            <li>"Weapons of Math Destruction" by Cathy O'Neil</li>
+            <li>
+              "The Uninhabitable Earth: Life After Warming" by David
+              Wallace-Wells
+            </li>
+            <li>
+              "Human Compatible: Artificial Intelligence and the Problem of
+              Control" by Stuart Russell
+            </li>
+            <li>"Fascism: A Warning" by Madeleine Albright</li>
+            <li>"Utopia for Realists" by Rutger Bregman</li>
+          </ul>
+        </div>
       </div>
     </>
   )

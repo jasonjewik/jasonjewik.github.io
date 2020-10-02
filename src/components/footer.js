@@ -1,23 +1,18 @@
 import React from 'react'
-import styled from '@emotion/styled'
 import Emoji from 'a11y-react-emoji'
+import Logos from './sm-logos'
 
-const StyledFooterText = styled.footer({
-  minWidth: '80%',
-  textAlign: 'center',
-  margin: 'auto',
-  marginTop: '2rem',
-  marginBottom: '2rem',
-})
-
-const Footer = () => (
-  <StyledFooterText>
-    © {new Date().getFullYear()} Jason Jewik. Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
-    {` `}
-    and made with <Emoji symbol="💕" label="love" />.
-  </StyledFooterText>
+const Footer = ({ themeContext }) => (
+  <footer style={{ marginTop: '4rem', marginBottom: '2rem' }}>
+    <div style={{ minWidth: '80%', textAlign: 'center' }}>
+      © {new Date().getFullYear()} Jason Jewik. Built with
+      {` `}
+      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      {` `}
+      and made with <Emoji symbol="💕" label="love" />.
+    </div>
+    <Logos themeContext={themeContext} />
+  </footer>
 )
 
 export default Footer
