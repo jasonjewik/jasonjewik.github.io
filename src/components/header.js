@@ -3,12 +3,12 @@ import { themes } from '../context/theme-context'
 import styled from '@emotion/styled'
 import Emoji from 'a11y-react-emoji'
 
-const DarkModeToggler = styled.button(({ color }) => ({
-  color: color,
-  background: 'transparent',
+const DarkModeToggler = styled.button(({ theme }) => ({
+  ...theme,
   border: 'none',
+  borderRadius: '4px',
   cursor: 'pointer',
-  position: 'absolute',
+  position: 'fixed',
   right: '24px',
   top: '16px',
   fontSize: '0.75em',
@@ -28,7 +28,7 @@ class Header extends React.Component {
       <header>
         <div>
           <DarkModeToggler
-            color={this.props.themeContext.theme.color}
+            theme={this.props.themeContext.theme}
             onClick={this.props.themeContext.toggleTheme}
           >
             {this.props.themeContext.theme === themes.dark ? (

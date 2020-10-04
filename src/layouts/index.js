@@ -3,19 +3,22 @@ import PropTypes from 'prop-types'
 import { ThemeContext } from '../context/theme-context'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Navbar from '../components/navbar'
 import Transition from '../components/transition'
 
 import { isMobile, withOrientationChange } from 'react-device-detect'
 
 const ContentWrapper = ({ isPortrait, children }) => {
   let width = '65%'
+  let marginTop = '6rem'
+
   if (isMobile && isPortrait) width = '85%'
+  if (isMobile && isPortrait) marginTop = '3rem'
 
   return (
     <div
       style={{
         margin: 'auto',
+        marginTop: marginTop,
         width: width,
       }}
     >
@@ -32,7 +35,6 @@ const Layout = ({ children, location }) => {
       {themeContext => (
         <>
           {!isMobile && <Header themeContext={themeContext} />}
-          <Navbar />
           <Transition location={location}>
             <OrientedContentWrapper>
               {children}

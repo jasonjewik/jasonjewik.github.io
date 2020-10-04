@@ -1,11 +1,11 @@
 import React from 'react'
-import SEO from '../components/seo'
 import Emoji from 'a11y-react-emoji'
 
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
 import ColoredText from '../components/colored-text'
 import A from '../components/non-flavored-links'
+import BlogPreview from '../components/blog-preview'
 
 import { isMobile } from 'react-device-detect'
 
@@ -47,17 +47,18 @@ const AnimatedHandWave = () => {
   )
 }
 
-const StyledPrefooter = styled.div({
+const PageBreak = styled.div({
   borderTopStyle: 'solid',
   borderTopColor: '#c0c0c0',
   borderTopWidth: '1px',
-  paddingTop: '4px',
-  marginTop: '32px',
+  width: '75%',
+  margin: 'auto',
+  marginTop: '2rem',
+  marginBottom: '1rem',
 })
 
 const IndexPage = () => (
   <>
-    <SEO title="Home" />
     <h1>
       {!isMobile && <AnimatedHandWave />}
       {!isMobile && ' '}
@@ -88,14 +89,40 @@ const IndexPage = () => (
       </A>{' '}
       of our field.
     </h2>
-    <StyledPrefooter>
-      If you'd like to say hi or noticed my website looks weird on your device,
-      please send me a message through this{' '}
+    <div style={{ marginTop: '1rem' }}>
+      -----
+      <br />
+      If you'd like to say hi or request a resume, please send me a message
+      through this{' '}
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
         contact form
       </a>
       . My pronouns are he/him/his.
-    </StyledPrefooter>
+    </div>
+
+    <PageBreak />
+
+    <BlogPreview />
+
+    <PageBreak />
+
+    <h1>My Recent Reads</h1>
+    <div>
+      <ul>
+        <li>"Weapons of Math Destruction" by Cathy O'Neil</li>
+        <li>
+          "The Uninhabitable Earth: Life After Warming" by David Wallace-Wells
+        </li>
+        <li>
+          "Human Compatible: Artificial Intelligence and the Problem of Control"
+          by Stuart Russell
+        </li>
+        <li>"Fascism: A Warning" by Madeleine Albright</li>
+        <li>"Utopia for Realists" by Rutger Bregman</li>
+      </ul>
+    </div>
+
+    <PageBreak />
   </>
 )
 
