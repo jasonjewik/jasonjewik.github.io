@@ -36,6 +36,24 @@ const Logos = ({ themeContext }) => {
           }
         }
       }
+      twitterLight: file(
+        relativePath: { eq: "Twitter_Social_Icon_Rounded_Square_Color.png" }
+      ) {
+        childImageSharp {
+          fluid(fit: INSIDE) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      twitterDark: file(
+        relativePath: { eq: "Twitter_Social_Icon_Rounded_Square_White.png" }
+      ) {
+        childImageSharp {
+          fluid(fit: INSIDE) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -81,6 +99,18 @@ const Logos = ({ themeContext }) => {
         fluid={data.medium.childImageSharp.fluid}
         href="https://medium.com/@jasonjewik"
       />
+      {themeContext.theme === themes.dark && (
+        <Logo
+          fluid={data.twitterDark.childImageSharp.fluid}
+          href="https://twitter.com/jasonjewik"
+        />
+      )}
+      {themeContext.theme === themes.light && (
+        <Logo
+          fluid={data.twitterLight.childImageSharp.fluid}
+          href="https://twitter.com/jasonjewik"
+        />
+      )}
     </LogoDiv>
   )
 }

@@ -65,29 +65,37 @@ const IndexPage = () => (
       <span>Hello there!</span>
     </h1>
     <h2>
-      I'm a computer science undergrad student @ UCLA interested in deep
-      learning.
-      <br />
-      <br />I believe the most pressing issue for AI researchers and engineers
-      right now is{' '}
-      <A href="" title="No link for this (yet)">
-        <ColoredText color="#38ad79">how to use AI ethically</ColoredText>
+      I'm a computer science undergrad at UCLA interested in deep learning, and
+      how we can use it to tackle the{' '}
+      <A
+        href="https://gist.github.com/jasonjewik/551dffbeca4c475a07488403c66b96a8"
+        title="My personal collection of resources"
+      >
+        <ColoredText color="#38ad79">climate crisis</ColoredText>.
       </A>
-      . I'm also an advocate for{' '}
+      <br />
+      <br />I also think about the deployment of{' '}
+      <A
+        href="https://github.com/daviddao/awful-ai"
+        title="Not my list, but a great resource!"
+      >
+        <ColoredText color="#2d7dae">(un)ethical AI</ColoredText>
+      </A>
+      , equalizing access to{' '}
       <A
         href="https://teachla.uclaacm.com/classes/ml"
         title="I help teach this course!"
       >
-        <ColoredText color="#2d7dae">equalizing access</ColoredText>
+        <ColoredText color="#2d7dae">CS education </ColoredText>
       </A>{' '}
-      to CS education and{' '}
+      and{' '}
       <A
         href="https://anchor.fm/ucla-acm-ai"
         title="I also edit this podcast about diversity in AI"
       >
-        <ColoredText color="#2d7dae">increasing the diversity</ColoredText>
+        <ColoredText color="#2d7dae">increasing diversity</ColoredText>
       </A>{' '}
-      of our field.
+      within the tech community.
     </h2>
     <div style={{ marginTop: '1rem' }}>
       -----
