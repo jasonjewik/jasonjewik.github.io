@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jason Jewik`,
-    description: `Hello there! My name is Jason Jewik. Here you'll find my blog and a collection of projects I've worked on.`,
+    description: `CS @ UCLA. Interested in AI and using it for mitigating and adapting to the climate crisis. 🤖🌱 He/him.`,
     author: `@jasonjewik`,
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
       options: {
         name: `Jason Jewik's Personal Website`,
         short_name: `Jason Jewik`,
-        description: `Hello there! My name is Jason Jewik. Here you'll find my blog and a collection of projects I've worked on.`,
+        description: `CS @ UCLA. Interested in AI and using it for mitigating and adapting to the climate crisis. 🤖🌱 He/him.`,
         lang: `en`,
         start_url: `/`,
         background_color: `#663399`,

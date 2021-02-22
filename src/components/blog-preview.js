@@ -47,7 +47,7 @@ const BlogPreview = () => {
         ))}
         <div style={{ textAlign: 'center' }}>
           <Link to="blog">
-            <h4 style={{ textDecoration: 'underline' }}>See More</h4>
+            <h4 style={{ textDecoration: 'underline' }}>Older Articles</h4>
           </Link>
         </div>
       </div>

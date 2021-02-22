@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from '@emotion/styled'
 import { ThemeContext, ThemeProvider } from './src/context/theme-context'
 
@@ -18,6 +19,16 @@ export const wrapRootElement = ({ element }) => (
     <ThemeContext.Consumer>
       {({ theme, toggleCount }) => (
         <WrapperDiv theme={theme} toggleCount={toggleCount}>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Jason Jewik</title>
+            <meta
+              name="description"
+              content="
+              CS @ UCLA. Interested in AI and using it for mitigating and
+              adapting to the climate crisis. 🤖🌱 He/him."
+            />
+          </Helmet>
           {element}
         </WrapperDiv>
       )}

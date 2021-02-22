@@ -15,14 +15,6 @@ const DarkModeToggler = styled.button(({ theme }) => ({
 }))
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props)
-    let currentHour = new Date().getHours()
-    let isNight = currentHour < 7 || currentHour >= 18
-    if (isNight) props.themeContext.setInitTheme(themes.dark)
-    else props.themeContext.setInitTheme(themes.light)
-  }
-
   render() {
     return (
       <header>
