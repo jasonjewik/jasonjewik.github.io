@@ -60,7 +60,7 @@ const Logos = ({ themeContext }) => {
   const LogoDiv = styled.div({
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'center'
   })
 
   const Logo = ({ fluid, href }) => (
@@ -68,7 +68,7 @@ const Logos = ({ themeContext }) => {
       style={{
         width: '1.5rem',
         height: '1.5rem',
-        margin: '0.75rem',
+        margin: '0.75rem'
       }}
     >
       <A href={href}>

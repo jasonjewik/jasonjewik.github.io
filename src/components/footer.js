@@ -6,7 +6,7 @@ const Footer = ({ themeContext }) => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+    <footer id="links" style={{ marginTop: '3rem', marginBottom: '2rem' }}>
       {' '}
       <div style={{ minWidth: '80%', textAlign: 'center' }}>
         © {currentYear} Jason Jewik. Built with
