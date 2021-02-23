@@ -14,13 +14,10 @@ const themes = {
 }
 
 const defaultState = {
-  theme: themes.light,
-  toggleCount: 0,
-  toggleTheme: () => {},
-}
-
-const nightState = {
-  theme: themes.dark,
+  theme:
+    (new Date().getHours() >= 7) & (new Date().getHours() < 18)
+      ? themes.light
+      : themes.dark,
   toggleCount: 0,
   toggleTheme: () => {},
 }
@@ -32,17 +29,12 @@ class ThemeProvider extends React.Component {
     super(props)
     this.state = defaultState
 
-    let currentHour = new Date().getHours()
-    let isNight = currentHour < 7 || currentHour >= 18
-    if (isNight) this.state = nightState
-    else this.state = defaultState
-  }
-
-  toggleTheme = () => {
-    let newTheme = themes.dark
-    if (this.state.theme === themes.dark) newTheme = themes.light
-    let toggleCount = this.state.toggleCount + 1
-    this.setState({ theme: newTheme, toggleCount: toggleCount })
+    this.toggleTheme = () => {
+      let newTheme = themes.dark
+      if (this.state.theme === themes.dark) newTheme = themes.light
+      let toggleCount = this.state.toggleCount + 1
+      this.setState({ theme: newTheme, toggleCount: toggleCount })
+    }
   }
 
   render() {
