@@ -1,4 +1,5 @@
 import React from 'react'
+import { window } from 'browser-monads'
 
 const themes = {
   dark: {
@@ -13,12 +14,12 @@ const themes = {
   },
 }
 
+let checkDarkMode =
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+
 const defaultState = {
-  theme:
-    (new Date().getHours() >= 7) & (new Date().getHours() < 18)
-      ? themes.light
-      : themes.dark,
-  toggleCount: 0,
+  theme: checkDarkMode ? themes.dark : themes.light,
+  manualToggle: false,
   toggleTheme: () => {},
 }
 
@@ -32,8 +33,7 @@ class ThemeProvider extends React.Component {
     this.toggleTheme = () => {
       let newTheme = themes.dark
       if (this.state.theme === themes.dark) newTheme = themes.light
-      let toggleCount = this.state.toggleCount + 1
-      this.setState({ theme: newTheme, toggleCount: toggleCount })
+      this.setState({ theme: newTheme, manualToggle: true })
     }
   }
 
