@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "Jason Jewik's Website",
+  "description": "Based loosely on the Gatsby default starter",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jason Jewik <@jasonjewik>",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/react": "^11.1.5",
@@ -27,8 +26,8 @@
     "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-device-detect": "^1.13.1",
-    "react-dom": "^16.12.0",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-transition-group": "^4.4.1",
     "react-typography": "^0.16.19",
@@ -49,14 +48,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gh-pages -d public -b master"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

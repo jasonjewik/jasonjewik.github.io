@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/header'
+import ThemeSwitch from '../components/theme-switch'
 import Footer from '../components/footer'
 import Transition from '../components/transition'
-
 import { isMobile, withOrientationChange } from 'react-device-detect'
+import './layout.css'
 
 const ContentWrapper = ({ isPortrait, children }) => {
-  let width = '65%'
+  let width = '50%'
   let marginTop = '6rem'
 
   if (isMobile && isPortrait) width = '85%'
@@ -27,16 +27,16 @@ const ContentWrapper = ({ isPortrait, children }) => {
 }
 
 const OrientedContentWrapper = withOrientationChange(ContentWrapper)
+const OrientedThemeSwitch = withOrientationChange(ThemeSwitch)
+const OrientedFooter = withOrientationChange(Footer)
 
 const Layout = ({ children, location }) => {
   return (
     <>
-      <Header />
       <Transition location={location}>
-        <OrientedContentWrapper>
-          {children}
-          <Footer />
-        </OrientedContentWrapper>
+        <OrientedThemeSwitch />
+        <OrientedContentWrapper>{children}</OrientedContentWrapper>
+        <OrientedFooter />
       </Transition>
     </>
   )
