@@ -85,9 +85,11 @@ const IndexPage = () => (
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
         contact form
       </a>
-      .<br />
-      Other places you can find me are at the{' '}
-      <a href="#links">bottom of this page</a>. My pronouns are he/him.
+      , or find me in any of these places:{' '}
+      <a href="https://www.linkedin.com/in/jasonjewik">LinkedIn</a>,{' '}
+      <a href="https://www.github.com/jasonjewik">GitHub</a>,{' '}
+      <a href="https://www.twitter.com/jasonjewik">Twitter</a>,{' '}
+      <a href="https://www.medium.com/@jasonjewik">Medium</a>.
     </div>
 
     <PageBreak />
@@ -130,6 +132,7 @@ const IndexPage = () => (
     <h1>My Recent Reads</h1>
     <div>
       <ul>
+        <li>"Discourses and Selected Writings" by Epictetus</li>
         <li>
           "Alien Oceans: The Search for Life in the Depths of Space" by Kevin
           Hand
@@ -142,7 +145,6 @@ const IndexPage = () => (
           "Human Compatible: Artificial Intelligence and the Problem of Control"
           by Stuart Russell
         </li>
-        <li>"Fascism: A Warning" by Madeleine Albright</li>
       </ul>
     </div>
 

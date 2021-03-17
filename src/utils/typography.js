@@ -1,9 +1,14 @@
 import Typography from 'typography'
 import fairyGatesTheme from 'typography-theme-fairy-gates'
+import '../styles/global.css'
+
 fairyGatesTheme.overrideThemeStyles = () => ({
   html: {
     fontSize: '2.75vmin',
     overflowX: 'hidden',
+    backgroundColor: 'var(--bg)',
+    color: 'var(--color)',
+    transition: 'var(--transition)',
   },
   h1: {
     color: 'inherit',

@@ -31,9 +31,6 @@ module.exports = {
         description: `CS @ UCLA. Interested in AI and using it for mitigating and adapting to the climate crisis. 🤖🌱 He/him.`,
         lang: `en`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
@@ -50,5 +47,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-dark-mode`,
   ],
 }

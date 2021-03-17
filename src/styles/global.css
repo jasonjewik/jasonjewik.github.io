@@ -1,0 +1,11 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.6s ease;
+}
+
+body.dark {
+  background-color: #202020;
+  color: #f0ead6;
+  transition: all 0.6s ease;
+}

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ThemeContext } from '../context/theme-context'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Transition from '../components/transition'
@@ -31,19 +30,15 @@ const OrientedContentWrapper = withOrientationChange(ContentWrapper)
 
 const Layout = ({ children, location }) => {
   return (
-    <ThemeContext.Consumer>
-      {themeContext => (
-        <>
-          {!isMobile && <Header themeContext={themeContext} />}
-          <Transition location={location}>
-            <OrientedContentWrapper>
-              {children}
-              <Footer themeContext={themeContext} />
-            </OrientedContentWrapper>
-          </Transition>
-        </>
-      )}
-    </ThemeContext.Consumer>
+    <>
+      <Header />
+      <Transition location={location}>
+        <OrientedContentWrapper>
+          {children}
+          <Footer />
+        </OrientedContentWrapper>
+      </Transition>
+    </>
   )
 }
 

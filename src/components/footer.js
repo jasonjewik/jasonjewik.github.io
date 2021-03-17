@@ -1,12 +1,11 @@
 import React from 'react'
 import Emoji from 'a11y-react-emoji'
-import Logos from './sm-logos'
 
-const Footer = ({ themeContext }) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="links" style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+    <footer id="links" style={{ marginTop: '1rem', marginBottom: '1rem' }}>
       {' '}
       <div style={{ minWidth: '80%', textAlign: 'center' }}>
         © {currentYear} Jason Jewik. Built with
@@ -15,7 +14,6 @@ const Footer = ({ themeContext }) => {
         {` `}
         and made with <Emoji symbol="💕" label="love" />.
       </div>
-      <Logos themeContext={themeContext} />
     </footer>
   )
 }
