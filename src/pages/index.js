@@ -6,6 +6,7 @@ import ColoredText from '../components/colored-text'
 import A from '../components/non-flavored-links'
 import BlogPreview from '../components/blog-preview'
 import { withOrientationChange } from 'react-device-detect'
+import SEO from '../components/seo'
 
 const AnimatedHandWave = () => {
   const wave = keyframes`
@@ -58,6 +59,7 @@ const PageBreak = styled.div({
 const IndexPage = ({ isPortrait }) => {
   return (
     <>
+      <SEO title={'Jason Jewik | Home'} />
       <h1>
         {!isPortrait && <AnimatedHandWave />}
         {!isPortrait && ' '}
