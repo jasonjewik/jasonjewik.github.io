@@ -89,7 +89,7 @@ const IndexPage = ({ isPortrait }) => {
         <a href="https://www.linkedin.com/in/jasonjewik">LinkedIn</a>,{' '}
         <a href="https://www.github.com/jasonjewik">GitHub</a>,{' '}
         <a href="https://www.twitter.com/jasonjewik">Twitter</a>,{' '}
-        <a href="https://www.medium.com/@jasonjewik">Medium</a>.
+        <a href="https://jasonjewik.medium.com">Medium</a>.
       </div>
 
       <PageBreak />

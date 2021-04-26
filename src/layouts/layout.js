@@ -7,7 +7,7 @@ import { isMobile, withOrientationChange } from 'react-device-detect'
 import './layout.css'
 
 const ContentWrapper = ({ isPortrait, children }) => {
-  let width = '50%'
+  let width = '800px'
   let marginTop = '6rem'
 
   if (isMobile && isPortrait) width = '85%'
