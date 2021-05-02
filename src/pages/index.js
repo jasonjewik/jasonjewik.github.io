@@ -82,16 +82,18 @@ const IndexPage = ({ isPortrait }) => {
       <div style={{ marginTop: '1rem' }}>
         -----
         <br />
-        If you'd like to say hi or request a resume, please send me a message
-        through this{' '}
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfByDsfHJ2W9DPQo6oi1zs9jDwPw5D8CrEee9z9IPMijCHiLw/viewform?usp=sf_link">
-          contact form
-        </a>
-        , or find me in any of these places:{' '}
+        If you'd like to say hi, please send an email to{' '}
+        <a href="mailto:jason.jewik@gmail.com">jason.jewik@gmail.com</a>, or
+        find me in any of these places:{' '}
         <a href="https://www.linkedin.com/in/jasonjewik">LinkedIn</a>,{' '}
         <a href="https://www.github.com/jasonjewik">GitHub</a>,{' '}
         <a href="https://www.twitter.com/jasonjewik">Twitter</a>,{' '}
-        <a href="https://jasonjewik.medium.com">Medium</a>.
+        <a href="https://jasonjewik.medium.com">Medium</a>. The most up-to-date
+        version of my resume can always be found{' '}
+        <a href="https://drive.google.com/file/d/17vKz_ZUphEiUJL-UfLudy7Dybl_eT5gd/view?usp=sharing">
+          in my Google Drive
+        </a>
+        .
       </div>
 
       <PageBreak />
@@ -136,6 +138,9 @@ const IndexPage = ({ isPortrait }) => {
       <div>
         <ul>
           <li>
+            <strong>The Socrates Express</strong> by Eric Weiner
+          </li>
+          <li>
             <strong>Discourses and Selected Writings</strong> by Epictetus
           </li>
           <li>
@@ -150,13 +155,6 @@ const IndexPage = ({ isPortrait }) => {
           <li>
             <strong>The Uninhabitable Earth: Life After Warming</strong> by
             David Wallace-Wells
-          </li>
-          <li>
-            <strong>
-              Human Compatible: Artificial Intelligence and the Problem of
-              Control
-            </strong>{' '}
-            by Stuart Russell
           </li>
         </ul>
         <span>
