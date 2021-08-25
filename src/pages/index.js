@@ -138,6 +138,13 @@ const IndexPage = ({ isPortrait }) => {
       <div>
         <ul>
           <li>
+            <strong>Meditations</strong> by Marcus Aurelius
+          </li>
+          <li>
+            <strong>Less is More: How Degrowth Will Save the World</strong> by
+            Jason Hickel
+          </li>
+          <li>
             <strong>The Socrates Express</strong> by Eric Weiner
           </li>
           <li>
@@ -148,13 +155,6 @@ const IndexPage = ({ isPortrait }) => {
               Alien Oceans: The Search for Life in the Depths of Space
             </strong>{' '}
             by Kevin Hand
-          </li>
-          <li>
-            <strong>Weapons of Math Destruction</strong> by Cathy O'Neil
-          </li>
-          <li>
-            <strong>The Uninhabitable Earth: Life After Warming</strong> by
-            David Wallace-Wells
           </li>
         </ul>
         <span>
