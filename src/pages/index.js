@@ -88,10 +88,23 @@ const IndexPage = ({ isPortrait }) => {
         <a href="https://www.linkedin.com/in/jasonjewik">LinkedIn</a>,{' '}
         <a href="https://www.github.com/jasonjewik">GitHub</a>,{' '}
         <a href="https://www.twitter.com/jasonjewik">Twitter</a>,{' '}
-        <a href="https://jasonjewik.medium.com">Medium</a>. The most up-to-date
-        version of my resume can always be found{' '}
-        <a href="https://drive.google.com/file/d/17vKz_ZUphEiUJL-UfLudy7Dybl_eT5gd/view?usp=sharing">
-          in my Google Drive
+        <a href="https://jasonjewik.medium.com">Medium</a>. My resume can be
+        found{' '}
+        <a
+          href="https://drive.google.com/file/d/17vKz_ZUphEiUJL-UfLudy7Dybl_eT5gd/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {' '}
+          here
+        </a>
+        , and a more detailed CV can be found{' '}
+        <a
+          href="https://drive.google.com/file/d/1XuZT7ODuNWFld6jAuGG6bZXdd9mQem2J/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
         </a>
         .
       </div>
