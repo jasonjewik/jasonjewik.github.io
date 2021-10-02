@@ -151,6 +151,13 @@ const IndexPage = ({ isPortrait }) => {
       <div>
         <ul>
           <li>
+            <strong>
+              Blockchain Chicken Farm: And Other Stories of Tech in China's
+              Countryside
+            </strong>{' '}
+            by Xiaowei Wang
+          </li>
+          <li>
             <strong>Meditations</strong> by Marcus Aurelius
           </li>
           <li>
@@ -162,12 +169,6 @@ const IndexPage = ({ isPortrait }) => {
           </li>
           <li>
             <strong>Discourses and Selected Writings</strong> by Epictetus
-          </li>
-          <li>
-            <strong>
-              Alien Oceans: The Search for Life in the Depths of Space
-            </strong>{' '}
-            by Kevin Hand
           </li>
         </ul>
         <span>
