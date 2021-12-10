@@ -2,8 +2,6 @@ import React from 'react'
 import Emoji from 'a11y-react-emoji'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
-import ColoredText from '../components/colored-text'
-import A from '../components/non-flavored-links'
 import BlogPreview from '../components/blog-preview'
 import { withOrientationChange } from 'react-device-detect'
 import SEO from '../components/seo'
@@ -41,7 +39,7 @@ const AnimatedHandWave = () => {
 
   return (
     <EmojiDiv>
-      <Emoji symbol="👋" />
+      <Emoji symbol="👋" label="hand-wave" />
     </EmojiDiv>
   )
 }
@@ -66,39 +64,22 @@ const IndexPage = ({ isPortrait }) => {
         <span>Hello there!</span>
       </h1>
       <h2>
-        I'm a CS undergrad at UCLA interested in machine learning, and how we
-        can use it to tackle the{' '}
-        <A
-          href="https://www.notion.so/Climate-Change-x-Tech-Stuff-bc893706198f43da85d15d9a82de4459"
-          title="A Notion page full of links I update from time to time"
-        >
-          <ColoredText color="#2d7dae">climate crisis</ColoredText>.
-        </A>
+        I'm a computer science undergrad at UCLA interested in machine learning,
+        and how we can use it to tackle the climate crisis.
         <br />
         <br />I also think about the deployment of unethical AI, equalizing
-        access to CS education and increasing diversity within the tech
-        community.
+        access to computer science education and increasing diversity within the
+        tech community.
       </h2>
       <div style={{ marginTop: '1rem' }}>
         -----
         <br />
-        If you'd like to say hi, please send an email to{' '}
-        <a href="mailto:jason.jewik@gmail.com">jason.jewik@gmail.com</a>, or
-        find me in any of these places:{' '}
+        If you'd like to say hi, please send an email to jason DOT jewik AT
+        gmail, or find me in any of these places:{' '}
         <a href="https://www.linkedin.com/in/jasonjewik">LinkedIn</a>,{' '}
         <a href="https://www.github.com/jasonjewik">GitHub</a>,{' '}
         <a href="https://www.twitter.com/jasonjewik">Twitter</a>,{' '}
-        <a href="https://jasonjewik.medium.com">Medium</a>. My resume can be
-        found{' '}
-        <a
-          href="https://drive.google.com/file/d/17vKz_ZUphEiUJL-UfLudy7Dybl_eT5gd/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {' '}
-          here
-        </a>
-        , and a more detailed CV can be found{' '}
+        <a href="https://jasonjewik.medium.com">Medium</a>. My CV can be found{' '}
         <a
           href="https://drive.google.com/file/d/1XuZT7ODuNWFld6jAuGG6bZXdd9mQem2J/view?usp=sharing"
           target="_blank"
@@ -107,6 +88,11 @@ const IndexPage = ({ isPortrait }) => {
           here
         </a>
         .
+      </div>
+      <div style={{ marginTop: '0.5rem', fontSize: '0.75rem' }}>
+        P.S. If you know why the handwave emoji above is transparent, please let
+        me know. It used to be in color and I don't know when or how it stopped
+        being in color.
       </div>
 
       <PageBreak />
@@ -151,6 +137,9 @@ const IndexPage = ({ isPortrait }) => {
       <div>
         <ul>
           <li>
+            <strong>Fermat's Last Theorem</strong> by Simon Singh
+          </li>
+          <li>
             <strong>
               Blockchain Chicken Farm: And Other Stories of Tech in China's
               Countryside
@@ -166,9 +155,6 @@ const IndexPage = ({ isPortrait }) => {
           </li>
           <li>
             <strong>The Socrates Express</strong> by Eric Weiner
-          </li>
-          <li>
-            <strong>Discourses and Selected Writings</strong> by Epictetus
           </li>
         </ul>
         <span>
