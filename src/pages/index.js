@@ -89,11 +89,6 @@ const IndexPage = ({ isPortrait }) => {
         </a>
         .
       </div>
-      <div style={{ marginTop: '0.5rem', fontSize: '0.75rem' }}>
-        P.S. If you know why the handwave emoji above is transparent, please let
-        me know. It used to be in color and I don't know when or how it stopped
-        being in color.
-      </div>
 
       <PageBreak />
 
@@ -102,6 +97,20 @@ const IndexPage = ({ isPortrait }) => {
       <PageBreak />
 
       <h1>Some Things I've Done</h1>
+      <div>
+        <a href="https://github.com/jasonjewik/snape">
+          <h2>Super Nifty Auto Pets Environment</h2>
+        </a>
+        <p>
+          I'm tired of losing consistently in{' '}
+          <a href="https://store.steampowered.com/app/1714040/Super_Auto_Pets/">
+            <em>Super Auto Pets</em>
+          </a>
+          , so I made this environment to train an RL agent to play for me. This
+          repository comes with a version of <em>Super Auto Pets</em> that can
+          be played in terminal.
+        </p>
+      </div>
       <div>
         <a href="https://teachla.uclaacm.com/ai-ethics">
           <h2>Unethical AI: Predictive Policing</h2>
@@ -137,6 +146,13 @@ const IndexPage = ({ isPortrait }) => {
       <div>
         <ul>
           <li>
+            <strong>
+              The Journey of Trees: A Story about Forests, People, and the
+              Future
+            </strong>{' '}
+            by Zach St. George
+          </li>
+          <li>
             <strong>Fermat's Last Theorem</strong> by Simon Singh
           </li>
           <li>
@@ -152,9 +168,6 @@ const IndexPage = ({ isPortrait }) => {
           <li>
             <strong>Less is More: How Degrowth Will Save the World</strong> by
             Jason Hickel
-          </li>
-          <li>
-            <strong>The Socrates Express</strong> by Eric Weiner
           </li>
         </ul>
         <span>
