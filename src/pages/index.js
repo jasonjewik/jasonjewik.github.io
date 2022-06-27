@@ -64,12 +64,8 @@ const IndexPage = ({ isPortrait }) => {
         <span>Hello there!</span>
       </h1>
       <h2>
-        I'm a computer science undergrad at UCLA interested in machine learning,
+        I'm a computer science graduate student at UCLA interested in machine learning,
         and how we can use it to tackle the climate crisis.
-        <br />
-        <br />I also think about the deployment of unethical AI, equalizing
-        access to computer science education and increasing diversity within the
-        tech community.
       </h2>
       <div style={{ marginTop: '1rem' }}>
         -----
