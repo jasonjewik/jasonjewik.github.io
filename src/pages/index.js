@@ -98,40 +98,46 @@ const IndexPage = ({ isPortrait }) => {
 
       <h1>Some Things I've Done</h1>
       <div>
-        <a href="https://github.com/jasonjewik/snape">
-          <h2>Super Nifty Auto Pets Environment</h2>
-        </a>
+        <h2>
+          <a href="https://github.com/jasonjewik/acab">A C++ Auto Battler</a> /
+          Super Nifty Auto Battler RL Environment
+        </h2>
         <p>
           I'm tired of losing consistently in{' '}
           <a href="https://store.steampowered.com/app/1714040/Super_Auto_Pets/">
             <em>Super Auto Pets</em>
           </a>
-          , so I made this environment to train an RL agent to play for me. This
-          repository comes with a version of <em>Super Auto Pets</em> that can
-          be played in terminal.
+          , so I am building an auto battler with a reinforcement learning
+          environment wrapper that complies with the Open AI Gym standard.
         </p>
       </div>
       <div>
-        <a href="https://teachla.uclaacm.com/ai-ethics">
-          <h2>Unethical AI: Predictive Policing</h2>
-        </a>
+        <h2>
+          <a href="https://teachla.uclaacm.com/ai-ethics">
+            Unethical AI: Predictive Policing
+          </a>
+        </h2>
         <p>
           A collaboration betwen ACM AI and ACM Teach LA to produce
           presentations on AI ethics. I helped create the slides on predictive
           policing.
         </p>
-        <a href="https://teachla.uclaacm.com/classes/ml">
-          <h2>Introduction to AI & ML</h2>
-        </a>
+        <h2>
+          <a href="https://teachla.uclaacm.com/classes/ml">
+            Introduction to AI & ML
+          </a>
+        </h2>
         <p>
           Another collaboration between ACM AI and ACM Teach LA. As a member of
           the ACM AI Outreach team, I helped develop the curriculum and teach
           the classes. We aimed to introduce important concepts such as linear
           regression, Bayes Theorem, and gradient descent.
         </p>
-        <a href="https://youtu.be/G6YvE_gZ-n0">
-          <h2>sustAInable: ML x Climate Change</h2>
-        </a>
+        <h2>
+          <a href="https://youtu.be/G6YvE_gZ-n0">
+            sustAInable: ML x Climate Change
+          </a>
+        </h2>
         <p>
           A collaboration between ACM AI and ACM Impact. This was a forum where
           attendees could discuss ways machine learning can address issues
@@ -145,6 +151,9 @@ const IndexPage = ({ isPortrait }) => {
       <h1>My Recent Reads</h1>
       <div>
         <ul>
+          <li>
+            <strong>A Promised Land</strong> by Barack H. Obama
+          </li>
           <li>
             <strong>
               The Journey of Trees: A Story about Forests, People, and the
@@ -164,10 +173,6 @@ const IndexPage = ({ isPortrait }) => {
           </li>
           <li>
             <strong>Meditations</strong> by Marcus Aurelius
-          </li>
-          <li>
-            <strong>Less is More: How Degrowth Will Save the World</strong> by
-            Jason Hickel
           </li>
         </ul>
         <span>
