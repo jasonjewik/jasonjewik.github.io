@@ -1,0 +1,43 @@
+html {
+    background: #eee;
+    color: black;
+}
+
+a {
+    color: royalblue;
+}
+
+code {
+    color: deeppink;
+}
+
+@media (prefers-color-scheme: dark) {
+   html {
+        background: #333;;
+        color: white;
+    }
+    a {
+        color: turquoise;
+    }
+    code {
+        color: orange;
+    }
+}
+
+/*https: //stackoverflow.com/questions/66486393/setting-different-font-sizes-on-page-for-desktop-and-mobile*/
+/* mobile styles first */
+body {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 512px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 24px;
+    }
+}
